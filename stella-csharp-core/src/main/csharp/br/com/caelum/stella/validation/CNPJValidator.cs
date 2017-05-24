@@ -1,8 +1,4 @@
-﻿using CaelumStellaCSharp.validation.error;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.RegularExpressions;
+﻿using System.Collections.Generic;
 
 namespace CaelumStellaCSharp
 {
@@ -12,13 +8,9 @@ namespace CaelumStellaCSharp
         protected override string GetRegexUnformatted => @"(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})";
         protected override int GetDocumentLength => 14;
 
-        public CNPJValidator() : base(false)
-        {
-        }
+        public CNPJValidator() : base(false) { }
 
-        public CNPJValidator(bool isFormatted) : base(isFormatted)
-        {
-        }
+        public CNPJValidator(bool isFormatted) : base(isFormatted) { }
 
         protected override List<int> GetMultiplicadores(List<int> digitos)
         {
