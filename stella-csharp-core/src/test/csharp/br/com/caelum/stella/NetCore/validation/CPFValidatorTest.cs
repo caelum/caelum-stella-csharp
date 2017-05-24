@@ -1,11 +1,12 @@
 using CaelumStellaCSharp;
+using CaelumStellaCSharp.validation.error;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
 namespace CaelumStellaCSharp.Test
 {
     [TestClass]
-    public class CPFTest
+    public class CPFValidatorTest
     {
         private CPFValidator cpfValidator;
 

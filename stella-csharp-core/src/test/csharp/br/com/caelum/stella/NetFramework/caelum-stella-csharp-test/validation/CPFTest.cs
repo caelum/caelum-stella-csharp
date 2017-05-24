@@ -1,4 +1,5 @@
 using CaelumStellaCSharp;
+using CaelumStellaCSharp.validation.error;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
