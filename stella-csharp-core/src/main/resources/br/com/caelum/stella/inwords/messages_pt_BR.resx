@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Extenso000" xml:space="preserve">
+    <value>zero</value>
+  </data>
+  <data name="Extenso001" xml:space="preserve">
+    <value>um</value>
+  </data>
+  <data name="Extenso002" xml:space="preserve">
+    <value>dois</value>
+  </data>
+  <data name="Extenso003" xml:space="preserve">
+    <value>três</value>
+  </data>
+  <data name="Extenso004" xml:space="preserve">
+    <value>quatro</value>
+  </data>
+  <data name="Extenso005" xml:space="preserve">
+    <value>cinco</value>
+  </data>
+  <data name="Extenso006" xml:space="preserve">
+    <value>seis</value>
+  </data>
+  <data name="Extenso007" xml:space="preserve">
+    <value>sete</value>
+  </data>
+  <data name="Extenso008" xml:space="preserve">
+    <value>oito</value>
+  </data>
+  <data name="Extenso009" xml:space="preserve">
+    <value>nove</value>
+  </data>
+  <data name="Extenso010" xml:space="preserve">
+    <value>dez</value>
+  </data>
+  <data name="Extenso011" xml:space="preserve">
+    <value>onze</value>
+  </data>
+  <data name="Extenso012" xml:space="preserve">
+    <value>doze</value>
+  </data>
+  <data name="Extenso013" xml:space="preserve">
+    <value>treze</value>
+  </data>
+  <data name="Extenso014" xml:space="preserve">
+    <value>quatorze</value>
+  </data>
+  <data name="Extenso015" xml:space="preserve">
+    <value>quinze</value>
+  </data>
+  <data name="Extenso016" xml:space="preserve">
+    <value>dezesseis</value>
+  </data>
+  <data name="Extenso017" xml:space="preserve">
+    <value>dezessete</value>
+  </data>
+  <data name="Extenso018" xml:space="preserve">
+    <value>dezoito</value>
+  </data>
+  <data name="Extenso019" xml:space="preserve">
+    <value>dezenove</value>
+  </data>
+  <data name="Extenso020" xml:space="preserve">
+    <value>vinte</value>
+  </data>
+  <data name="Extenso030" xml:space="preserve">
+    <value>trinta</value>
+  </data>
+  <data name="Extenso040" xml:space="preserve">
+    <value>quarenta</value>
+  </data>
+  <data name="Extenso050" xml:space="preserve">
+    <value>cinquenta</value>
+  </data>
+  <data name="Extenso060" xml:space="preserve">
+    <value>sessenta</value>
+  </data>
+  <data name="Extenso070" xml:space="preserve">
+    <value>setenta</value>
+  </data>
+  <data name="Extenso080" xml:space="preserve">
+    <value>oitenta</value>
+  </data>
+  <data name="Extenso090" xml:space="preserve">
+    <value>noventa</value>
+  </data>
+  <data name="Extenso100" xml:space="preserve">
+    <value>cem</value>
+  </data>
+  <data name="Extenso100mais" xml:space="preserve">
+    <value>cento</value>
+  </data>
+  <data name="Extenso1e12plural" xml:space="preserve">
+    <value>trilhões</value>
+  </data>
+  <data name="Extenso1e12singular" xml:space="preserve">
+    <value>trilhão</value>
+  </data>
+  <data name="Extenso1e15plural" xml:space="preserve">
+    <value>quatrilhões</value>
+  </data>
+  <data name="Extenso1e15singular" xml:space="preserve">
+    <value>quatrilhão</value>
+  </data>
+  <data name="Extenso1e18plural" xml:space="preserve">
+    <value>quintilhões</value>
+  </data>
+  <data name="Extenso1e18singular" xml:space="preserve">
+    <value>quintilhão</value>
+  </data>
+  <data name="Extenso1e21plural" xml:space="preserve">
+    <value>sextilhões</value>
+  </data>
+  <data name="Extenso1e21singular" xml:space="preserve">
+    <value>sextilhão</value>
+  </data>
+  <data name="Extenso1e24plural" xml:space="preserve">
+    <value>septilhões</value>
+  </data>
+  <data name="Extenso1e24singular" xml:space="preserve">
+    <value>septilhão</value>
+  </data>
+  <data name="Extenso1e27plural" xml:space="preserve">
+    <value>octilhões</value>
+  </data>
+  <data name="Extenso1e27singular" xml:space="preserve">
+    <value>octilhão</value>
+  </data>
+  <data name="Extenso1e30plural" xml:space="preserve">
+    <value>nonilhões</value>
+  </data>
+  <data name="Extenso1e30singular" xml:space="preserve">
+    <value>nonilhão</value>
+  </data>
+  <data name="Extenso1e33plural" xml:space="preserve">
+    <value>decilhões</value>
+  </data>
+  <data name="Extenso1e33singular" xml:space="preserve">
+    <value>decilhão</value>
+  </data>
+  <data name="Extenso1e36plural" xml:space="preserve">
+    <value>undecilhões</value>
+  </data>
+  <data name="Extenso1e36singular" xml:space="preserve">
+    <value>undecilhão</value>
+  </data>
+  <data name="Extenso1e39plural" xml:space="preserve">
+    <value>doudecilhões</value>
+  </data>
+  <data name="Extenso1e39singular" xml:space="preserve">
+    <value>doudecilhão</value>
+  </data>
+  <data name="Extenso1e3plural" xml:space="preserve">
+    <value>mil</value>
+  </data>
+  <data name="Extenso1e3singular" xml:space="preserve">
+    <value>mil</value>
+  </data>
+  <data name="Extenso1e42plural" xml:space="preserve">
+    <value>tredecilhões</value>
+  </data>
+  <data name="Extenso1e42singular" xml:space="preserve">
+    <value>tredecilhão</value>
+  </data>
+  <data name="Extenso1e6plural" xml:space="preserve">
+    <value>milhões</value>
+  </data>
+  <data name="Extenso1e6singular" xml:space="preserve">
+    <value>milhão</value>
+  </data>
+  <data name="Extenso1e9plural" xml:space="preserve">
+    <value>bilhões</value>
+  </data>
+  <data name="Extenso1e9singular" xml:space="preserve">
+    <value>bilhão</value>
+  </data>
+  <data name="Extenso200" xml:space="preserve">
+    <value>duzentos</value>
+  </data>
+  <data name="Extenso300" xml:space="preserve">
+    <value>trezentos</value>
+  </data>
+  <data name="Extenso400" xml:space="preserve">
+    <value>quatrocentos</value>
+  </data>
+  <data name="Extenso500" xml:space="preserve">
+    <value>quinhentos</value>
+  </data>
+  <data name="Extenso600" xml:space="preserve">
+    <value>seiscentos</value>
+  </data>
+  <data name="Extenso700" xml:space="preserve">
+    <value>setecentos</value>
+  </data>
+  <data name="Extenso800" xml:space="preserve">
+    <value>oitocentos</value>
+  </data>
+  <data name="Extenso900" xml:space="preserve">
+    <value>novecentos</value>
+  </data>
+  <data name="Extensosep" xml:space="preserve">
+    <value>\ \e\ </value>
+  </data>
+  <data name="Extensosepdezena" xml:space="preserve">
+    <value>\ \e\ </value>
+  </data>
+  <data name="Extensosepformato" xml:space="preserve">
+    <value>\de\ </value>
+  </data>
+  <data name="Extensosepmil" xml:space="preserve">
+    <value>\,\ </value>
+  </data>
+</root>
