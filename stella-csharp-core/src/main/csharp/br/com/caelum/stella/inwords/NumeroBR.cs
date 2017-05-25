@@ -22,10 +22,10 @@ namespace CaelumStellaCSharp
             double numero = numeroOrigem;
 
             double posicao = 1;
-            Grupo grupo = null;
+            GrupoDe3Digitos grupo = null;
             do
             {
-                grupo = new Grupo((long)(numero % (double)1000), posicao, grupo);
+                grupo = new GrupoDe3Digitos((long)(numero % (double)1000), posicao, grupo);
                 posicao++;
                 numero /= 1000;
 
@@ -44,18 +44,23 @@ namespace CaelumStellaCSharp
             }
             else
             {
-                string estaCasaPorExtenso = string.Empty;
-                double estaCasa = (int)((numero / potenciaDe10) * potenciaDe10);
-                if (estaCasa == 100)
-                    estaCasaPorExtenso = resourceManager.GetString("Extenso100mais");
-                else
-                    estaCasaPorExtenso = resourceManager.GetString(string.Format("Extenso{0:000}", estaCasa));
-
-                var proximasCasas = numero % potenciaDe10;
-                return string.Format("{0:000} e {1:000}"
-                    , estaCasaPorExtenso
-                    , Extenso(proximasCasas));
+                return ExtensoDestaEDasProximasCasas(numero, potenciaDe10);
             }
+        }
+
+        private string ExtensoDestaEDasProximasCasas(double numero, double potenciaDe10)
+        {
+            string estaCasaPorExtenso = string.Empty;
+            double estaCasa = (int)((numero / potenciaDe10) * potenciaDe10);
+            if (estaCasa == 100)
+                estaCasaPorExtenso = resourceManager.GetString("Extenso100mais");
+            else
+                estaCasaPorExtenso = resourceManager.GetString(string.Format("Extenso{0:000}", estaCasa));
+
+            var proximasCasas = numero % potenciaDe10;
+            return string.Format("{0:000} e {1:000}"
+                , estaCasaPorExtenso
+                , Extenso(proximasCasas));
         }
 
         private string Extenso0_20(double numero)
@@ -64,17 +69,17 @@ namespace CaelumStellaCSharp
         }
     }
 
-    class Grupo
+    class GrupoDe3Digitos
     {
         private const string NUMERO_NEGATIVO = "Número não pode ser negativo";
         private readonly long numero;
         private readonly double posicao;
         private readonly Digito digito;
-        private readonly Grupo grupoFilho;
+        private readonly GrupoDe3Digitos grupoFilho;
 
         public double Posicao => posicao;
 
-        public Grupo(long numero, double posicao, Grupo grupoFilho)
+        public GrupoDe3Digitos(long numero, double posicao, GrupoDe3Digitos grupoFilho)
         {
             if (numero < 0)
             {
@@ -134,9 +139,9 @@ namespace CaelumStellaCSharp
             return result;
         }
 
-        public Grupo PrimeiroGrupoComValor()
+        public GrupoDe3Digitos PrimeiroGrupoComValor()
         {
-            Grupo result = null;
+            GrupoDe3Digitos result = null;
 
             if (ValorSomenteDoGrupo() > 0)
                 result = this;
@@ -173,7 +178,7 @@ namespace CaelumStellaCSharp
                 }
                 else
                 {
-                    Grupo proximoGrupoComValor = grupoFilho.PrimeiroGrupoComValor();
+                    GrupoDe3Digitos proximoGrupoComValor = grupoFilho.PrimeiroGrupoComValor();
                     string separador = proximoGrupoComValor.Posicao == 1 ? " e" : ",";
                     return string.Format("{0} {1}{2} {3}",
                     digito.Extenso(),
@@ -254,21 +259,25 @@ namespace CaelumStellaCSharp
 
     class DigitoDezena : Digito
     {
+        private bool MultiploDe10 => digitoFilho.Numero == 0;
+        private bool Entre10e19 => numero == 1;
+        private bool Entre0e9 => numero == 0;
+
         public DigitoDezena(long numero, double posicao, Digito digitoFilho) : base(numero, posicao, digitoFilho) { }
 
         public override string Extenso()
         {
-            if (numero == 0)
+            if (Entre0e9)
             {
                 return digitoFilho.Extenso();
             }
-            else if (numero == 1)
+            else if (Entre10e19)
             {
                 return base.Extenso(ValorSomenteDoDigito() + digitoFilho.Numero);
             }
             else
             {
-                if (digitoFilho.Numero == 0)
+                if (MultiploDe10)
                     return base.Extenso(ValorSomenteDoDigito());
                 else
                     return
@@ -281,11 +290,13 @@ namespace CaelumStellaCSharp
 
     class DigitoCentena : Digito
     {
+        private bool MultiploDe100 => ValorDosFilhos() == 0;
+
         public DigitoCentena(long numero, double posicao, Digito digitoFilho) : base(numero, posicao, digitoFilho) { }
 
         public override string Extenso()
         {
-            if (ValorDosFilhos() == 0)
+            if (MultiploDe100)
                 return base.Extenso(ValorSomenteDoDigito());
             else
             {
