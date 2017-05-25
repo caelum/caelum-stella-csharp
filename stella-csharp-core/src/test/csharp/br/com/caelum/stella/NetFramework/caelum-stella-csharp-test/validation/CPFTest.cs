@@ -47,7 +47,7 @@ namespace CaelumStellaCSharp.Test
             }
             catch (InvalidStateException e)
             {
-                AssertMessage(e, CPFError.InvalidDigits);
+                AssertMessage(e, DocumentError.InvalidDigits);
             }
         }
 
@@ -61,7 +61,7 @@ namespace CaelumStellaCSharp.Test
             }
             catch (InvalidStateException e)
             {
-                AssertMessage(e, CPFError.InvalidDigits);
+                AssertMessage(e, DocumentError.InvalidDigits);
             }
         }
 
@@ -76,7 +76,7 @@ namespace CaelumStellaCSharp.Test
             catch (InvalidStateException e)
             {
                 Assert.IsTrue(e.GetErrors().Count == 1);
-                AssertMessage(e, CPFError.InvalidDigits);
+                AssertMessage(e, DocumentError.InvalidDigits);
             }
         }
 
@@ -92,7 +92,7 @@ namespace CaelumStellaCSharp.Test
             catch (InvalidStateException e)
             {
                 Assert.IsTrue(e.GetErrors().Count == 1);
-                AssertMessage(e, CPFError.InvalidCheckDigits);
+                AssertMessage(e, DocumentError.InvalidCheckDigits);
             }
         }
 
@@ -108,7 +108,7 @@ namespace CaelumStellaCSharp.Test
             catch (InvalidStateException e)
             {
                 Assert.IsTrue(e.GetErrors().Count == 1);
-                AssertMessage(e, CPFError.InvalidCheckDigits);
+                AssertMessage(e, DocumentError.InvalidCheckDigits);
             }
         }
 
@@ -132,7 +132,7 @@ namespace CaelumStellaCSharp.Test
             catch (InvalidStateException e)
             {
                 Assert.IsTrue(e.GetErrors().Count == 1);
-                AssertMessage(e, CPFError.InvalidFormat);
+                AssertMessage(e, DocumentError.InvalidFormat);
             }
         }
 

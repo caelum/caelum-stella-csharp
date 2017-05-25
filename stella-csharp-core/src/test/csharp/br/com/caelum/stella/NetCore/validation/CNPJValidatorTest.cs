@@ -50,7 +50,7 @@ namespace CaelumStellaCSharp.Test
             catch (InvalidStateException e)
             {
                 Assert.IsTrue(e.GetErrors().Count == 1);
-                AssertMessage(e, CPFError.InvalidCheckDigits);
+                AssertMessage(e, DocumentError.InvalidCheckDigits);
             }
         }
 
@@ -69,7 +69,7 @@ namespace CaelumStellaCSharp.Test
             catch (InvalidStateException e)
             {
                 Assert.IsTrue(e.GetErrors().Count == 1);
-                AssertMessage(e, CPFError.InvalidCheckDigits);
+                AssertMessage(e, DocumentError.InvalidCheckDigits);
             }
         }
 
@@ -96,7 +96,7 @@ namespace CaelumStellaCSharp.Test
             catch (InvalidStateException e)
             {
                 Assert.IsTrue(e.GetErrors().Count == 1);
-                AssertMessage(e, CPFError.InvalidFormat);
+                AssertMessage(e, DocumentError.InvalidFormat);
             }
         }
     }

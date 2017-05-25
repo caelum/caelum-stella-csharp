@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CaelumStellaCSharp
 {
-    public class CPFError
+    public class DocumentError
     {
         public static string InvalidFormat = "Formato inválido";
         public static string RepeatedDigits = "Dígito repetido";

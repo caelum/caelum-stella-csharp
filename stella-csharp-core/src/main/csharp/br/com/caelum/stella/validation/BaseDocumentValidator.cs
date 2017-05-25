@@ -37,18 +37,18 @@ namespace CaelumStellaCSharp
                 if (_isFormatted)
                 {
                     if (!CheckFormattedCPF(cpf))
-                        errors.Add(CPFError.InvalidFormat);
+                        errors.Add(DocumentError.InvalidFormat);
 
                     return errors;
                 }
                 unformattedCPF = UnformatCPF(cpf);
 
                 if (!CheckUnformattedCPF(unformattedCPF))
-                    errors.Add(CPFError.InvalidDigits);
+                    errors.Add(DocumentError.InvalidDigits);
                 else
                 {
                     if (!CheckDocumentLength(unformattedCPF))
-                        errors.Add(CPFError.InvalidDigits);
+                        errors.Add(DocumentError.InvalidDigits);
 
                     string trechoCPF = unformattedCPF.Substring(0, DocumentLength - 2);
 
@@ -56,7 +56,7 @@ namespace CaelumStellaCSharp
                     int digito2 = GetDigitoVerificador(trechoCPF + digito1.ToString());
 
                     if (unformattedCPF != trechoCPF + digito1.ToString() + digito2.ToString())
-                        errors.Add(CPFError.InvalidCheckDigits);
+                        errors.Add(DocumentError.InvalidCheckDigits);
                 }
             }
 
