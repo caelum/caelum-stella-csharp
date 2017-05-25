@@ -8,9 +8,9 @@ namespace CaelumStellaCSharp
     public abstract class BaseDocumentValidator
     {
         protected readonly bool _isFormatted;
-        protected abstract string GetRegexFormatted { get; }
-        protected abstract string GetRegexUnformatted { get; }
-        protected abstract int GetDocumentLength { get; }
+        protected abstract string RegexFormatted { get; }
+        protected abstract string RegexUnformatted { get; }
+        protected abstract int DocumentLength { get; }
 
         public BaseDocumentValidator(bool isFormatted)
         {
@@ -50,7 +50,7 @@ namespace CaelumStellaCSharp
                     if (!CheckDocumentLength(unformattedCPF))
                         errors.Add(CPFError.InvalidDigits);
 
-                    string trechoCPF = unformattedCPF.Substring(0, GetDocumentLength - 2);
+                    string trechoCPF = unformattedCPF.Substring(0, DocumentLength - 2);
 
                     int digito1 = GetDigitoVerificador(trechoCPF);
                     int digito2 = GetDigitoVerificador(trechoCPF + digito1.ToString());
@@ -65,18 +65,18 @@ namespace CaelumStellaCSharp
 
         private bool CheckDocumentLength(string cpf)
         {
-            return cpf.Length == GetDocumentLength;
+            return cpf.Length == DocumentLength;
         }
 
         private bool CheckFormattedCPF(string formattedCPF)
         {
-            Regex regex = new Regex(GetRegexFormatted);
+            Regex regex = new Regex(RegexFormatted);
             return regex.IsMatch(formattedCPF);
         }
 
         private bool CheckUnformattedCPF(string unformattedCPF)
         {
-            Regex regex = new Regex(GetRegexUnformatted);
+            Regex regex = new Regex(RegexUnformatted);
             return regex.IsMatch(unformattedCPF);
         }
 

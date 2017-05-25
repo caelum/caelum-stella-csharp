@@ -6,7 +6,7 @@ using System;
 namespace CaelumStellaCSharp.Test
 {
     [TestClass]
-    public class CPFValidatorTest
+    public class CPFValidatorTest : BaseDocumentValidatorTest
     {
         private CPFValidator cpfValidator;
 
@@ -134,13 +134,6 @@ namespace CaelumStellaCSharp.Test
                 Assert.IsTrue(e.GetErrors().Count == 1);
                 AssertMessage(e, CPFError.InvalidFormat);
             }
-        }
-
-        private void AssertMessage(InvalidStateException invalidStateException
-            , String expected)
-        {
-            Assert.IsTrue(invalidStateException
-                .GetErrors().Contains(expected));
         }
     }
 }
