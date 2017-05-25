@@ -89,8 +89,8 @@ namespace CaelumStellaCSharp
         {
             int result = 0;
             List<int> digitos = GetDigitos(trechoCPF);
-            int soma = GetSoma(trechoCPF, digitos, GetMultiplicadores(digitos));
-            int subtracao = GetSubtracao(soma);
+            int soma = GetSomaDosProdutos(trechoCPF, digitos, GetMultiplicadores(digitos));
+            int subtracao = GetComplementoDoModuloDe11(soma);
 
             if (subtracao > 9)
                 result = 0;
@@ -99,12 +99,12 @@ namespace CaelumStellaCSharp
             return result;
         }
 
-        private int GetSubtracao(int soma)
+        private int GetComplementoDoModuloDe11(int soma)
         {
             return 11 - (soma % 11);
         }
 
-        private int GetSoma(string trechoCPF, List<int> digitos, List<int> multiplicadores)
+        private int GetSomaDosProdutos(string trechoCPF, List<int> digitos, List<int> multiplicadores)
         {
             int soma = 0;
             for (int i = 0; i < trechoCPF.Count(); i++)
