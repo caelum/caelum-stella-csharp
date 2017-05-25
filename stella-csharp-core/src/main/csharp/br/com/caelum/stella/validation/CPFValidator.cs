@@ -2,7 +2,7 @@
 
 namespace CaelumStellaCSharp
 {
-    public class CPFValidator : BaseDocumentValidator
+    public class CPFValidator : BaseCadastroPessoaValidator
     {
         protected override string RegexFormatted => @"(\d{3})[.](\d{3})[.](\d{3})-(\d{2})";
         protected override string RegexUnformatted => @"(\d{3})(\d{3})(\d{3})(\d{2})";
