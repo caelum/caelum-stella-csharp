@@ -12,7 +12,7 @@ namespace CaelumStellaCSharp
         protected override int GetDigitoVerificador(string documentSubstring)
         {
             int result = 0;
-            List<int> digitos = GetDigitos(documentSubstring);
+            int[] digitos = GetDigitos(documentSubstring);
             int soma = GetSomaDosProdutos(documentSubstring, digitos, GetMultiplicadores(digitos));
             int subtracao = GetComplementoDoModuloDe11(soma);
 

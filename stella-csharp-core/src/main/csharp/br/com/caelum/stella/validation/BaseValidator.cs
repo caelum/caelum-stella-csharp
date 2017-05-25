@@ -101,7 +101,7 @@ namespace CaelumStellaCSharp
             return 11 - (soma % 11);
         }
 
-        protected int GetSomaDosProdutos(string documentSubstring, List<int> digitos, List<int> multiplicadores)
+        protected int GetSomaDosProdutos(string documentSubstring, int[] digitos, int[] multiplicadores)
         {
             int soma = 0;
             for (int i = 0; i < documentSubstring.Count(); i++)
@@ -109,14 +109,14 @@ namespace CaelumStellaCSharp
             return soma;
         }
 
-        protected abstract List<int> GetMultiplicadores(List<int> digitos);
+        protected abstract int[] GetMultiplicadores(int[] digitos);
 
-        protected static List<int> GetDigitos(string documentSubstring)
+        protected static int[] GetDigitos(string documentSubstring)
         {
             return documentSubstring
                 .ToCharArray()
                 .Select(c => int.Parse(c.ToString()))
-                .ToList();
+                .ToArray();
         }
     }
 }

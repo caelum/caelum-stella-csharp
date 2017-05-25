@@ -12,12 +12,12 @@ namespace CaelumStellaCSharp
 
         public CNPJValidator(bool isFormatted) : base(isFormatted) { }
 
-        protected override List<int> GetMultiplicadores(List<int> digitos)
+        protected override int[] GetMultiplicadores(int[] digitos)
         {
-            if (digitos.Count == DocumentLength - 2)
-                return new List<int> { 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
+            if (digitos.Length == DocumentLength - 2)
+                return new int[] { 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
             else
-                return new List<int> { 6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
+                return new int[] { 6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
         }
     }
 }

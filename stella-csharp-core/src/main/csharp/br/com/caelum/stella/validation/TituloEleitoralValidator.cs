@@ -15,7 +15,7 @@ namespace CaelumStellaCSharp.validation
 
         protected override int GetDigitoVerificador(string documentSubstring)
         {
-            List<int> digitos = GetDigitos(documentSubstring);
+            int[] digitos = GetDigitos(documentSubstring);
             int modulo = (GetSomaDosProdutos(documentSubstring, digitos, GetMultiplicadores(digitos)) % 11) % 10;
 
             if (modulo > 9)
@@ -24,12 +24,12 @@ namespace CaelumStellaCSharp.validation
                 return modulo;
         }
 
-        protected override List<int> GetMultiplicadores(List<int> digitos)
+        protected override int[] GetMultiplicadores(int[] digitos)
         {
-            if (digitos.Count == DocumentLength - 2)
-                return new List<int> { 2, 3, 4, 5, 6, 7, 8, 9, 0, 0 };
+            if (digitos.Length == DocumentLength - 2)
+                return new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 0, 0 };
             else
-                return new List<int> { 0, 0, 0, 0, 0, 0, 0, 0, 7, 8, 9 };
+                return new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 7, 8, 9 };
         }
 
         protected override bool CheckCountryState(string document)
