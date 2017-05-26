@@ -48,6 +48,9 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\..\NetCore\http\ViaCEPTest.cs">
+      <Link>http\ViaCEPTest.cs</Link>
+    </Compile>
     <Compile Include="..\..\NetCore\inwords\NumeroBRTest.cs">
       <Link>inwords\NumeroBRTest.cs</Link>
     </Compile>

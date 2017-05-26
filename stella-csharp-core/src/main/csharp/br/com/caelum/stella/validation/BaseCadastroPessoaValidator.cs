@@ -13,8 +13,12 @@ namespace CaelumStellaCSharp
         {
             int result = 0;
             int[] digitos = GetDigitos(documentSubstring);
-            int soma = GetSomaDosProdutos(documentSubstring, digitos, GetMultiplicadores(digitos));
-            int subtracao = GetComplementoDoModuloDe11(soma);
+            int subtracao = 
+                GetComplementoDoModuloDe11(
+                    GetSomaDosProdutos(
+                        documentSubstring
+                        , digitos
+                        , GetMultiplicadores(digitos)));
 
             if (subtracao > 9)
                 result = 0;
