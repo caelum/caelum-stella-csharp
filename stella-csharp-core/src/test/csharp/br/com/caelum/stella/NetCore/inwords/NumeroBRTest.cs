@@ -8,12 +8,12 @@ namespace CaelumStellaCSharp.Test
     [TestClass]
     public class NumeroBRTest
     {
-        NumeroBR numeroBR;
+        NumeroPT numeroBR;
 
         [TestInitialize]    
         public void Initialize()
         {
-            numeroBR = new NumeroBR();
+            numeroBR = new NumeroPT();
         }
 
         [TestMethod]

@@ -2,14 +2,24 @@
 
 namespace CaelumStellaCSharp
 {
+    /// <summary>
+    /// Verifica se uma cadeia (String) é válida para o documento de CNPJ (Cadastro Nacional de Pessoa Jurídica).
+    /// </summary>
     public class CNPJValidator : BaseCadastroPessoaValidator
     {
         protected override string RegexFormatted => @"([\d]{2}[\.][\d]{3}[\.][\d]{3}[\/][\d]{4}[-][\d]{2})|([\d]{3}[\.][\d]{3}[\.][\d]{3}[-][\d]{2})";
         protected override string RegexUnformatted => @"(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})";
         protected override int DocumentLength => 14;
 
+        /// <summary>
+        /// Este construtor considera, por padrão, que as cadeias não estão formatadas para geração de mensagens.
+        /// </summary>
         public CNPJValidator() : base(false) { }
 
+        /// <summary>
+        /// Este construtor leva em conta se o valor está ou não formatado.
+        /// </summary>
+        /// <param name="isFormatted">considera cadeia no formato de CNPJ: "dd.ddd.ddd/dddd-dd" onde "d" é um dígito decimal.</param>
         public CNPJValidator(bool isFormatted) : base(isFormatted) { }
 
         protected override int[] GetMultiplicadores(int[] digitos)

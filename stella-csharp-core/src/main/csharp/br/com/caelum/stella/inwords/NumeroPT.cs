@@ -7,15 +7,23 @@ using System.Threading;
 
 namespace CaelumStellaCSharp
 {
-    public class NumeroBR
+    /// <summary>
+    /// Responsável por transformar um número em sua representação por extenso, em português.
+    /// </summary>
+    public class NumeroPT
     {
         private readonly ResourceManager resourceManager;
-        public NumeroBR()
+        public NumeroPT()
         {
             resourceManager = new ResourceManager(@"CaelumStellaCSharp.Properties.Resources",
                          System.Reflection.Assembly.Load(new System.Reflection.AssemblyName("CaelumStellaCSharp")));
         }
 
+        /// <summary>
+        /// Transforma um número em sua representação por extenso, em português.
+        /// </summary>
+        /// <param name="numeroOrigem">número a ser transformado</param>
+        /// <returns></returns>
         public string Extenso(double numeroOrigem)
         {
             numeroOrigem = Math.Round(numeroOrigem);
