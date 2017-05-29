@@ -8528,7 +8528,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v1.1": [
-      "C:\\Users\\marce\\Documents\\GitHub\\caelum-stella-csharp\\stella-csharp-core\\src\\test\\csharp\\br\\com\\caelum\\stella\\CSharpBrasil\\caelum-stella-csharp.csproj",
       "CaelumStellaCSharp >= 1.0.0",
       "MSTest.TestAdapter >= 1.1.11",
       "MSTest.TestFramework >= 1.1.11",
@@ -8555,9 +8554,6 @@
           "projectReferences": {
             "C:\\Users\\marce\\Documents\\GitHub\\caelum-stella-csharp\\stella-csharp-core\\src\\main\\csharp\\br\\com\\caelum\\stella\\caelum-stella-csharp.csproj": {
               "projectPath": "C:\\Users\\marce\\Documents\\GitHub\\caelum-stella-csharp\\stella-csharp-core\\src\\main\\csharp\\br\\com\\caelum\\stella\\caelum-stella-csharp.csproj"
-            },
-            "C:\\Users\\marce\\Documents\\GitHub\\caelum-stella-csharp\\stella-csharp-core\\src\\test\\csharp\\br\\com\\caelum\\stella\\CSharpBrasil\\caelum-stella-csharp.csproj": {
-              "projectPath": "C:\\Users\\marce\\Documents\\GitHub\\caelum-stella-csharp\\stella-csharp-core\\src\\test\\csharp\\br\\com\\caelum\\stella\\CSharpBrasil\\caelum-stella-csharp.csproj"
             }
           }
         }
