@@ -54,8 +54,19 @@
     <Compile Include="..\..\NetCore\inwords\NumeroBRTest.cs">
       <Link>inwords\NumeroBRTest.cs</Link>
     </Compile>
+    <Compile Include="..\..\NetCore\validation\BaseDocumentValidatorTest.cs">
+      <Link>validation\BaseDocumentValidatorTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NetCore\validation\CNPJValidatorTest.cs">
+      <Link>validation\CNPJValidatorTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NetCore\validation\CPFValidatorTest.cs">
+      <Link>validation\CPFValidatorTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NetCore\validation\TituloEleitoralValidatorTest.cs">
+      <Link>validation\TituloEleitoralValidatorTest.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="validation\CPFTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
