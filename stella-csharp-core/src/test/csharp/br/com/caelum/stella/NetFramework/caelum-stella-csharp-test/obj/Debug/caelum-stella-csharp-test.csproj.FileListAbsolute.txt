@@ -12,3 +12,5 @@ C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test
 C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetFramework\caelum-stella-csharp-test\obj\Debug\caelum-stella-csharp-test.csprojResolveAssemblyReference.cache
 C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetFramework\caelum-stella-csharp-test\obj\Debug\CaelumStellaCSharp.Test.dll
 C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetFramework\caelum-stella-csharp-test\obj\Debug\CaelumStellaCSharp.Test.pdb
+C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetFramework\caelum-stella-csharp-test\bin\Debug\Newtonsoft.Json.dll
+C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetFramework\caelum-stella-csharp-test\bin\Debug\Newtonsoft.Json.xml
