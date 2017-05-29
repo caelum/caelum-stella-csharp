@@ -21,8 +21,6 @@ namespace CaelumStellaCSharp.Test
         private readonly String[] invalidSecondDigitStrings = { "543275360119", "452083221728", "253346440547",
         "553505611206", "884328631055" };
 
-        //private Validator<String> validatorFormatted;
-
         private TituloEleitoralValidator validator;
         private TituloEleitoralValidator validatorFormatted;
 

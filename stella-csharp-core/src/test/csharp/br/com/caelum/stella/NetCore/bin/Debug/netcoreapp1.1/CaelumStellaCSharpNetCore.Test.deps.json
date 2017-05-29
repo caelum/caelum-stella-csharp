@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v1.1",
-    "signature": "4f7a646097192ec474bd3bdbe2f68ec697905314"
+    "signature": "888d46e024f594a6941936e0498ef56103299e19"
   },
   "compilationOptions": {},
   "targets": {
@@ -11,10 +11,23 @@
           "CaelumStellaCSharp": "1.0.0",
           "MSTest.TestAdapter": "1.1.11",
           "MSTest.TestFramework": "1.1.11",
-          "Microsoft.NET.Test.Sdk": "15.0.0"
+          "Microsoft.NET.Test.Sdk": "15.0.0",
+          "Moq": "4.7.10"
         },
         "runtime": {
           "CaelumStellaCSharpNetCore.Test.dll": {}
+        }
+      },
+      "castle.core/4.0.0": {
+        "dependencies": {
+          "System.Collections.Specialized": "4.3.0",
+          "System.ComponentModel.TypeConverter": "4.3.0",
+          "System.Diagnostics.TraceSource": "4.0.0",
+          "System.Xml.XmlDocument": "4.3.0",
+          "System.Xml.XmlSerializer": "4.0.11"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Castle.Core.dll": {}
         }
       },
       "microsoft.net.test.sdk/15.0.0": {
@@ -248,6 +261,14 @@
           }
         }
       },
+      "moq/4.7.10": {
+        "dependencies": {
+          "Castle.Core": "4.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Moq.dll": {}
+        }
+      },
       "mstest.testadapter/1.1.11": {},
       "mstest.testframework/1.1.11": {
         "runtime": {
@@ -387,6 +408,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "castle.core/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iLINpMFc07bcb0d075AB0mcXV/MT8J8oyBarDSeyrLM03UoCVOuvYu87LI4511XHfy7XEhHtMDum5gt2s56xDg==",
+      "path": "castle.core/4.0.0",
+      "hashPath": "castle.core.4.0.0.nupkg.sha512"
+    },
     "microsoft.net.test.sdk/15.0.0": {
       "type": "package",
       "serviceable": true,
@@ -407,6 +435,13 @@
       "sha512": "sha512-OIQilyR5xljftuD2UcKoXANGrHESt/MN7DVfzEdpF7Lg7CtL6NMADidHjZU+iwHCdvpyqBJ+TE7aI01qYVWsaw==",
       "path": "microsoft.testplatform.testhost/15.0.0",
       "hashPath": "microsoft.testplatform.testhost.15.0.0.nupkg.sha512"
+    },
+    "moq/4.7.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nJIcN826e7//HUrnfyTzy+s0zS98bdQI27wBr3/+C+rpY1d6HIboVg+j1s7JkVZtwOCOZbsquuAYViGTl9wuJQ==",
+      "path": "moq/4.7.10",
+      "hashPath": "moq.4.7.10.nupkg.sha512"
     },
     "mstest.testadapter/1.1.11": {
       "type": "package",

@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using CaelumStellaCSharp.http.exceptions;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -14,14 +15,14 @@ namespace CaelumStellaCSharp.http
         {
         }
 
-        public Endereco GetEndereco(string cep)
+        public Endereco GetEndereco(CEP cep)
         {
             var json = GetEndereco(cep, OutputType.Json);
             return TryConvertToEndereco(
                 JsonConvert.DeserializeObject<Endereco>(json) as Endereco);
         }
 
-        public async Task<Endereco> GetEnderecoAsync(string cep)
+        public async Task<Endereco> GetEnderecoAsync(CEP cep)
         {
             var json = await GetEnderecoAsync(cep, OutputType.Json);
             return TryConvertToEndereco(
@@ -40,42 +41,42 @@ namespace CaelumStellaCSharp.http
             }
         }
 
-        public async Task<string> GetEnderecoXmlAsync(string cep)
+        public async Task<string> GetEnderecoXmlAsync(CEP cep)
         {
             return await GetEnderecoAsync(cep, OutputType.Xml);
         }
 
-        public string GetEnderecoXml(string cep)
+        public string GetEnderecoXml(CEP cep)
         {
             return GetEndereco(cep, OutputType.Xml);
         }
 
-        public async Task<string> GetEnderecoJsonAsync(string cep)
+        public async Task<string> GetEnderecoJsonAsync(CEP cep)
         {
             return await GetEnderecoAsync(cep, OutputType.Json);
         }
 
-        public string GetEnderecoJson(string cep)
+        public string GetEnderecoJson(CEP cep)
         {
             return GetEndereco(cep, OutputType.Json);
         }
 
-        public async Task<string> GetEnderecoPipedAsync(string cep)
+        public async Task<string> GetEnderecoPipedAsync(CEP cep)
         {
             return await GetEnderecoAsync(cep, OutputType.Piped);
         }
 
-        public string GetEnderecoPiped(string cep)
+        public string GetEnderecoPiped(CEP cep)
         {
             return GetEndereco(cep, OutputType.Piped);
         }
 
-        public async Task<string> GetEnderecoQuertyAsync(string cep)
+        public async Task<string> GetEnderecoQuertyAsync(CEP cep)
         {
             return await GetEnderecoAsync(cep, OutputType.Querty);
         }
 
-        public string GetEnderecoQuerty(string cep)
+        public string GetEnderecoQuerty(CEP cep)
         {
             return GetEndereco(cep, OutputType.Querty);
         }
