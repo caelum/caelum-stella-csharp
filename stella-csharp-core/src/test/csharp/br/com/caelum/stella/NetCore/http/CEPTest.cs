@@ -1,9 +1,6 @@
 ﻿using CaelumStellaCSharp.http;
 using CaelumStellaCSharp.http.exceptions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CaelumStellaCSharp.Test.http
 {

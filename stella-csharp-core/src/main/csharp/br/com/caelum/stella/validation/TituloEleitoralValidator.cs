@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CaelumStellaCSharp.validation
+﻿namespace CaelumStellaCSharp.validation
 {
     /// <summary>
     /// Representa um validador de Título de Eleitor. O algoritmo utilzado foi

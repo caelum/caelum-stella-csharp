@@ -1,9 +1,4 @@
-﻿using CaelumStellaCSharp.validation.error;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.RegularExpressions;
-
-namespace CaelumStellaCSharp
+﻿namespace CaelumStellaCSharp
 {
     public abstract class BaseCadastroPessoaValidator : BaseValidator
     {

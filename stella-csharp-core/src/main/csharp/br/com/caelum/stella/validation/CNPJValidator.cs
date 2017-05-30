@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace CaelumStellaCSharp
+﻿namespace CaelumStellaCSharp
 {
     /// <summary>
     /// Verifica se uma cadeia (String) é válida para o documento de CNPJ (Cadastro Nacional de Pessoa Jurídica).

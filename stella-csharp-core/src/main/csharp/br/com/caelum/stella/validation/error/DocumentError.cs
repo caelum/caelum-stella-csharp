@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CaelumStellaCSharp
+﻿namespace CaelumStellaCSharp
 {
     public class DocumentError
     {

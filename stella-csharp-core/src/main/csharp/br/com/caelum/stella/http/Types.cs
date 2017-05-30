@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CaelumStellaCSharp.http
+﻿namespace CaelumStellaCSharp.http
 {
     internal class OutputType
     {
