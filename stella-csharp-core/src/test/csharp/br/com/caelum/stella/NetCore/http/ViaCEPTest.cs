@@ -1,8 +1,11 @@
 ﻿using CaelumStellaCSharp.http;
 using CaelumStellaCSharp.http.exceptions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
 using System;
 using System.Collections.Generic;
+using System.Net;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,7 +14,7 @@ namespace CaelumStellaCSharp.Test.http
     [TestClass]
     public class ViaCEPTest
     {
-        private const int DEFAULT_VIACEP_REQUEST_DELAY = 500;
+        private const int DEFAULT_VIACEP_REQUEST_DELAY = 100;
         ViaCEP viaCEP;
 
         [TestInitialize]
@@ -183,6 +186,46 @@ namespace CaelumStellaCSharp.Test.http
         public void ShouldFailWhenZipCodeDoesNotExist()
         {
             viaCEP.GetEndereco("00000-000");
+        }
+
+        #endregion
+
+
+        #region Failed Tests
+
+        [TestMethod]
+        public void ShouldFailUponErrorStatusCode()
+        {
+            HttpStatusCode[] expectedStatusCode = new HttpStatusCode[]
+            {
+                HttpStatusCode.GatewayTimeout,
+                HttpStatusCode.InternalServerError,
+                HttpStatusCode.ProxyAuthenticationRequired,
+                HttpStatusCode.Unauthorized,
+                HttpStatusCode.Forbidden,
+                HttpStatusCode.MethodNotAllowed,
+                HttpStatusCode.ServiceUnavailable
+            };
+            foreach (var statusCode in expectedStatusCode)
+            {
+                ShouldFailUponRequestOfSameStatusCode(statusCode);
+            }
+        }
+
+        private void ShouldFailUponRequestOfSameStatusCode(HttpStatusCode expectedStatusCode)
+        {
+            try
+            {
+                var jsonAddress =
+                    new ViaCEP(new BrokenClientHandler(expectedStatusCode))
+                        .GetEnderecoJson("04101300");
+                Assert.Fail();
+            }
+            catch (HttpRequestFailException exc)
+            {
+                if (exc.StatusCode != expectedStatusCode)
+                    Assert.Fail();
+            }
         }
 
         #endregion
