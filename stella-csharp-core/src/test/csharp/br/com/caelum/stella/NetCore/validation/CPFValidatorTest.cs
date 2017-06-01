@@ -135,5 +135,37 @@ namespace Caelum.Stella.CSharp.Validation.Test
                 AssertMessage(e, DocumentError.InvalidFormat);
             }
         }
+
+        [TestMethod]
+        public void NaoDeveValidarCPFComDigitosRepetidos()
+        {
+            string[] cpfs = new string[]
+            {
+                "11111111111",
+                "22222222222",
+                "33333333333",
+                "44444444444",
+                "55555555555",
+                "66666666666",
+                "77777777777",
+                "88888888888",
+                "99999999999"
+            };
+
+            CPFValidator validator = new CPFValidator();
+            foreach (var cpf in cpfs)
+            {
+                try
+                {
+                    validator.IsValid("22222222222");
+                    Assert.Fail();
+                }
+                catch (InvalidStateException e)
+                {
+                    Assert.IsTrue(e.GetErrors().Count == 1);
+                    AssertMessage(e, DocumentError.RepeatedDigits);
+                }
+            }
+        }
     }
 }

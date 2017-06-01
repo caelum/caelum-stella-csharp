@@ -47,6 +47,8 @@ namespace Caelum.Stella.CSharp.Validation
 
                 if (!CheckUnformattedDocument(unformattedDocument))
                     errors.Add(DocumentError.InvalidDigits);
+                else if (!CheckMoreThan1DistinctDigit(unformattedDocument))
+                    errors.Add(DocumentError.RepeatedDigits);
                 else
                 {
                     if (!CheckDocumentLength(unformattedDocument))
@@ -68,6 +70,11 @@ namespace Caelum.Stella.CSharp.Validation
             }
 
             return errors;
+        }
+
+        private bool CheckMoreThan1DistinctDigit(string unformattedDocument)
+        {
+            return unformattedDocument.ToCharArray().Distinct().Count() > 1;
         }
 
         private bool CheckDocumentLength(string document)
