@@ -1,8 +1,8 @@
-﻿using CaelumStellaCSharp.http.exceptions;
+﻿using Caelum.Stella.CSharp.Http.Exceptions;
 using System;
 using System.Text.RegularExpressions;
 
-namespace CaelumStellaCSharp.http
+namespace Caelum.Stella.CSharp.Http
 {
     public class CEP : IComparable<CEP>, IEquatable<CEP>
     {

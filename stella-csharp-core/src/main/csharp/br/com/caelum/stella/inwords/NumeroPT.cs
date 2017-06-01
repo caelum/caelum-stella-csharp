@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Resources;
 
-namespace CaelumStellaCSharp
+namespace Caelum.Stella.CSharp.Inwords
 {
     /// <summary>
     /// Responsável por transformar um número em sua representação por extenso, em português.

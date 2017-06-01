@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Caelum.Stella.CSharp</id>
+    <version>1.1.0</version>
+    <authors>Caelum - Ensino e Inovação</authors>
+    <owners>Caelum - Ensino e Inovação</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/caelum/caelum-stella-csharp</licenseUrl>
+    <projectUrl>https://github.com/caelum/caelum-stella-csharp</projectUrl>
+    <iconUrl>https://www.caelum.com.br/imagens/base/caelum-ensino-inovacao-share.jpg</iconUrl>
+    <description>Uma API .Net Standard para validação e formatação de CPF, CNPJ, Título Eleitoral, números por extenso em português e obtenção de endereços através do CEP.</description>
+    <releaseNotes>Release inicial</releaseNotes>
+    <repository url="https://github.com/caelum/caelum-stella-csharp" />
+    <dependencies>
+      <group targetFramework=".NETStandard1.2">
+        <dependency id="NETStandard.Library" version="1.6.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="10.0.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\main\csharp\br\com\caelum\stella\bin\Debug\netstandard1.2\Caelum.Stella.CSharp.dll" target="lib\netstandard1.2\Caelum.Stella.CSharp.dll" />
+  </files>
+</package>

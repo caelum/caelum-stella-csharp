@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Caelum.Stella.CSharp</id>
+    <version>$version$</version>
+    <title>Caelum Stella CSharp</title>
+    <authors>Caelum - Ensino e Inovação</authors>
+    <owners>Caelum - Ensino e Inovação</owners>
+    <licenseUrl>https://github.com/caelum/caelum-stella-csharp</licenseUrl>
+    <projectUrl>https://github.com/caelum/caelum-stella-csharp</projectUrl>
+    <iconUrl>https://www.caelum.com.br/imagens/base/caelum-ensino-inovacao-share.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Uma API .Net Standard para validação e formatação de CPF, CNPJ, Título Eleitoral, números por extenso em português e obtenção de endereços através do CEP.</description>
+    <releaseNotes>Release inicial</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>cpf cnpj numeros extenso cep viacep</tags>
+  </metadata>
+</package>

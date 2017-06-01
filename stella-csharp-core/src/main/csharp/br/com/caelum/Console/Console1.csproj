@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Caelum.Stella.CSharp">
+      <HintPath>..\stella\bin\Debug\netstandard1.2\Caelum.Stella.CSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

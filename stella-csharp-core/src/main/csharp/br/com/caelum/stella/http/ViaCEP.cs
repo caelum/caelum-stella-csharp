@@ -1,14 +1,13 @@
-﻿using CaelumStellaCSharp.http.exceptions;
+﻿using Caelum.Stella.CSharp.Http.Exceptions;
 using Newtonsoft.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace CaelumStellaCSharp.http
+namespace Caelum.Stella.CSharp.Http
 {
     public class ViaCEP
     {
         private readonly HttpClientHandler httpClientHandler;
-        private readonly IViaCEPClient viaCEPClient;
 
         public ViaCEP()
         {

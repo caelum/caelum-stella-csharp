@@ -1,7 +1,7 @@
 ﻿using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace CaelumStellaCSharp.http
+namespace Caelum.Stella.CSharp.Http
 {
     public interface IHttpResponseMessageClient
     {

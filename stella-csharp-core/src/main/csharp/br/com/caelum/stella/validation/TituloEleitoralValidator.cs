@@ -1,4 +1,4 @@
-﻿namespace CaelumStellaCSharp.validation
+﻿namespace Caelum.Stella.CSharp.Validation
 {
     /// <summary>
     /// Representa um validador de Título de Eleitor. O algoritmo utilzado foi

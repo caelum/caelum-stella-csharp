@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using System.Net.Http;
 
-namespace CaelumStellaCSharp.http
+namespace Caelum.Stella.CSharp.Http
 {
     public class HttpResponse : IHttpResponse
     {

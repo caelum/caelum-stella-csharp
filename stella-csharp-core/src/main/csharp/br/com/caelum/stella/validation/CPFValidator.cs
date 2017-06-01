@@ -1,4 +1,4 @@
-﻿namespace CaelumStellaCSharp
+﻿namespace Caelum.Stella.CSharp.Validation
 {
     /// <summary>
     /// Verifica se uma cadeia (String) é válida para o documento de CPF (Cadastro de Pessoa Física).

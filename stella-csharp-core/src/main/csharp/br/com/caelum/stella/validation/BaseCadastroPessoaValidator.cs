@@ -1,4 +1,4 @@
-﻿namespace CaelumStellaCSharp
+﻿namespace Caelum.Stella.CSharp.Validation
 {
     public abstract class BaseCadastroPessoaValidator : BaseValidator
     {

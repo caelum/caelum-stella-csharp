@@ -2888,7 +2888,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "CaelumStellaCSharp/1.0.0": {
+      "Caelum.Stella.CSharp/1.1.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.2",
         "dependencies": {
@@ -8620,7 +8620,7 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "CaelumStellaCSharp/1.0.0": {
+    "Caelum.Stella.CSharp/1.1.0": {
       "type": "project",
       "path": "../../../../../../../main/csharp/br/com/caelum/stella/caelum-stella-csharp.csproj",
       "msbuildProject": "../../../../../../../main/csharp/br/com/caelum/stella/caelum-stella-csharp.csproj"
@@ -8628,7 +8628,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v1.1": [
-      "CaelumStellaCSharp >= 1.0.0",
+      "Caelum.Stella.CSharp >= 1.1.0",
       "MSTest.TestAdapter >= 1.1.11",
       "MSTest.TestFramework >= 1.1.11",
       "Microsoft.NET.Test.Sdk >= 15.0.0",

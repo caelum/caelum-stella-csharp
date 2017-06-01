@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CaelumStellaCSharp.Test
+namespace Caelum.Stella.CSharp.Inwords.Test
 {
     [TestClass]
     public class NumeroBRTest

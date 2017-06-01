@@ -1,19 +1,15 @@
-using CaelumStellaCSharp;
-using CaelumStellaCSharp.validation.error;
+using Caelum.Stella.CSharp.Error;
+using Caelum.Stella.CSharp.Validation.Error;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace CaelumStellaCSharp.Test
+namespace Caelum.Stella.CSharp.Validation.Test
 {
     [TestClass]
     public class CNPJValidatorTest : BaseDocumentValidatorTest
     {
         private CNPJValidator cnpjValidator;
-        private static String INVALID_FORMAT = "INVALID FORMAT";
-        private static String INVALID_CHECK_DIGITS = "INVALID CHECK DIGITS";
-        private static String INVALID_DIGITS = "INVALID DIGITS";
         private String validString = "26.637.142/0001-58";
-        private String validStringNotFormatted = "26637142000158";
 
         [TestInitialize()]
         public void Initialize()
@@ -22,7 +18,7 @@ namespace CaelumStellaCSharp.Test
         }
 
         [TestMethod]
-        public void shouldValidateValidCNPJ()
+        public void ShouldValidateValidCNPJ()
         {
             cnpjValidator.IsValid("11222333000181");
             cnpjValidator.IsValid("63025530002409");
@@ -31,13 +27,13 @@ namespace CaelumStellaCSharp.Test
         }
 
         [TestMethod]
-        public void shoulValidateNullCNPJ()
+        public void ShoulValidateNullCNPJ()
         {
             cnpjValidator.IsValid(null);
         }
 
         [TestMethod]
-        public void shouldNotValidateCNPJCheckDigitsWithFirstCheckDigitWrong()
+        public void ShouldNotValidateCNPJCheckDigitsWithFirstCheckDigitWrong()
         {
             CNPJValidator validator = new CNPJValidator();
             // VALID CNPJ = 742213250001-30
@@ -55,7 +51,7 @@ namespace CaelumStellaCSharp.Test
         }
 
         [TestMethod]
-        public void shouldNotValidateCNPJCheckDigitsWithSecondCheckDigitWrong()
+        public void ShouldNotValidateCNPJCheckDigitsWithSecondCheckDigitWrong()
         {
             CNPJValidator validator = new CNPJValidator();
 
@@ -74,7 +70,7 @@ namespace CaelumStellaCSharp.Test
         }
 
         [TestMethod]
-        public void shouldValidateValidFormattedCNPJ()
+        public void ShouldValidateValidFormattedCNPJ()
         {
             CNPJValidator validator = new CNPJValidator(true);
             String value = validString;
@@ -82,7 +78,7 @@ namespace CaelumStellaCSharp.Test
         }
 
         [TestMethod]
-        public void shouldNotValidateValidUnformattedCNPJWhenExplicity()
+        public void ShouldNotValidateValidUnformattedCNPJWhenExplicity()
         {
             CNPJValidator validator = new CNPJValidator(true);
 

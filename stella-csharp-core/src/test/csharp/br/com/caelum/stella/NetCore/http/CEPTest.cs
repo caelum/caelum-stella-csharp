@@ -1,8 +1,8 @@
-﻿using CaelumStellaCSharp.http;
-using CaelumStellaCSharp.http.exceptions;
+﻿using Caelum.Stella.CSharp.Http;
+using Caelum.Stella.CSharp.Http.Exceptions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace CaelumStellaCSharp.Test.http
+namespace Caelum.Stella.CSharp.Test.Http
 {
     [TestClass]
     public class CEPTest

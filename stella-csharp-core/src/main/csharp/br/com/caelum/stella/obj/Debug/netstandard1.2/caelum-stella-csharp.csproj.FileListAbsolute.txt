@@ -1,8 +1,0 @@
-C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\main\csharp\br\com\caelum\stella\bin\Debug\netstandard1.2\CaelumStellaCSharp.deps.json
-C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\main\csharp\br\com\caelum\stella\bin\Debug\netstandard1.2\CaelumStellaCSharp.dll
-C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\main\csharp\br\com\caelum\stella\bin\Debug\netstandard1.2\CaelumStellaCSharp.pdb
-C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\main\csharp\br\com\caelum\stella\obj\Debug\netstandard1.2\CaelumStellaCSharp.Properties.messages_pt_BR.resources
-C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\main\csharp\br\com\caelum\stella\obj\Debug\netstandard1.2\caelum-stella-csharp.csproj.GenerateResource.Cache
-C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\main\csharp\br\com\caelum\stella\obj\Debug\netstandard1.2\caelum-stella-csharp.AssemblyInfo.cs
-C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\main\csharp\br\com\caelum\stella\obj\Debug\netstandard1.2\CaelumStellaCSharp.dll
-C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\main\csharp\br\com\caelum\stella\obj\Debug\netstandard1.2\CaelumStellaCSharp.pdb

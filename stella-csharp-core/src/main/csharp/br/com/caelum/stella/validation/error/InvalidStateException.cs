@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
-namespace CaelumStellaCSharp.validation.error
+namespace Caelum.Stella.CSharp.Validation.Error
 {
     public class InvalidStateException : Exception
     {
@@ -14,6 +15,11 @@ namespace CaelumStellaCSharp.validation.error
         public List<string> GetErrors()
         {
             return _errors;
+        }
+
+        public override string ToString()
+        {
+            return string.Join(", ", _errors);
         }
     }
 }

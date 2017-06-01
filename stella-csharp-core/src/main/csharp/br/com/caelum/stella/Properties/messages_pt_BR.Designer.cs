@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CaelumStellaCSharp.Properties {
+namespace Caelum.Stella.CSharp.Properties {
     using System;
     using System.Reflection;
     

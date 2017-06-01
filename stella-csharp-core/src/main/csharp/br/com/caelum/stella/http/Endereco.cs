@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace CaelumStellaCSharp.http
+namespace Caelum.Stella.CSharp.Http
 {
     [DataContract]
     public class Endereco

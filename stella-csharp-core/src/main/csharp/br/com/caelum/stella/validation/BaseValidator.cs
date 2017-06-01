@@ -1,9 +1,10 @@
-﻿using CaelumStellaCSharp.validation.error;
+﻿using Caelum.Stella.CSharp.Validation.Error;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Linq;
+using Caelum.Stella.CSharp.Error;
 
-namespace CaelumStellaCSharp
+namespace Caelum.Stella.CSharp.Validation
 {
     public abstract class BaseValidator
     {

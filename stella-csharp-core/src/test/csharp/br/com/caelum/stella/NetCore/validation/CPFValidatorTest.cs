@@ -1,9 +1,9 @@
-using CaelumStellaCSharp;
-using CaelumStellaCSharp.validation.error;
+using Caelum.Stella.CSharp.Error;
+using Caelum.Stella.CSharp.Validation.Error;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace CaelumStellaCSharp.Test
+namespace Caelum.Stella.CSharp.Validation.Test
 {
     [TestClass]
     public class CPFValidatorTest : BaseDocumentValidatorTest

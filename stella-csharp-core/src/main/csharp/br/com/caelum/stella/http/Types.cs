@@ -1,4 +1,4 @@
-﻿namespace CaelumStellaCSharp.http
+﻿namespace Caelum.Stella.CSharp.Http
 {
     internal class OutputType
     {

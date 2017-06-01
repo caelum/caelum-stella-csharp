@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CaelumStellaCSharp.http.exceptions
+namespace Caelum.Stella.CSharp.Http.Exceptions
 {
     public class ZipCodeDoesNotExist : Exception
     {

@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CaelumStellaCSharp.Test.http
+namespace Caelum.Stella.CSharp.Test.Http
 {
     internal class BrokenClientHandler : HttpClientHandler
     {

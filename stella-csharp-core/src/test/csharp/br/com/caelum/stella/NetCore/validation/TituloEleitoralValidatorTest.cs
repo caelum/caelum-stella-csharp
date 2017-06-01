@@ -1,11 +1,11 @@
-﻿using CaelumStellaCSharp.validation;
-using CaelumStellaCSharp.validation.error;
+﻿using Caelum.Stella.CSharp.Validation;
+using Caelum.Stella.CSharp.Validation.Error;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CaelumStellaCSharp.Test
+namespace Caelum.Stella.CSharp.Validation.Test
 {
     [TestClass]
     public class TituloEleitoralValidatorTest
@@ -33,7 +33,7 @@ namespace CaelumStellaCSharp.Test
 
 
         [TestMethod]
-        public void shouldValidateCorrectString()
+        public void ShouldValidateCorrectString()
         {
             foreach (String validString in validStrings)
             {
@@ -42,7 +42,7 @@ namespace CaelumStellaCSharp.Test
         }
 
         [TestMethod]
-        public void shouldValidateCorrectFormattedString()
+        public void ShouldValidateCorrectFormattedString()
         {
             foreach (String validString in validStringsFormatted)
             {
@@ -51,7 +51,7 @@ namespace CaelumStellaCSharp.Test
         }
 
         [TestMethod]
-        public void shouldNotValidateStringWithFirstCheckDigitWrong()
+        public void ShouldNotValidateStringWithFirstCheckDigitWrong()
         {
             foreach (String invalidString in invalidFirstDigitStrings)
             {
@@ -67,7 +67,7 @@ namespace CaelumStellaCSharp.Test
         }
 
         [TestMethod]
-        public void shouldNotValidateStringWithSecondCheckDigitWrong()
+        public void ShouldNotValidateStringWithSecondCheckDigitWrong()
         {
             foreach (String invalidString in invalidSecondDigitStrings)
             {
@@ -84,21 +84,21 @@ namespace CaelumStellaCSharp.Test
 
         [TestMethod]
         [ExpectedException(typeof(InvalidStateException))]
-        public void shouldNotValidateStringMoreDigits()
+        public void ShouldNotValidateStringMoreDigits()
         {
             validator.IsValid(validStrings[0] + "0");
         }
 
         [TestMethod]
         [ExpectedException(typeof(InvalidStateException))]
-        public void shouldNotValidateStringWithCodigoDeEstadoInvalidoMenorDoQueUm()
+        public void ShouldNotValidateStringWithCodigoDeEstadoInvalidoMenorDoQueUm()
         {
             validator.IsValid("471235380051");
         }
 
         [TestMethod]
         [ExpectedException(typeof(InvalidStateException))]
-        public void shouldNotValidateStringWithCodigoDeEstadoInvalidoMaiorDoQue28()
+        public void ShouldNotValidateStringWithCodigoDeEstadoInvalidoMaiorDoQue28()
         {
             validator.IsValid("815155812960");
         }

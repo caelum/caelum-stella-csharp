@@ -1,10 +1,8 @@
-﻿using CaelumStellaCSharp.validation.error;
+﻿using Caelum.Stella.CSharp.Validation.Error;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace CaelumStellaCSharp.Test
+namespace Caelum.Stella.CSharp.Validation.Test
 {
     public class BaseDocumentValidatorTest
     {

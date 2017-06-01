@@ -1,4 +1,4 @@
-﻿namespace CaelumStellaCSharp
+﻿namespace Caelum.Stella.CSharp.Error
 {
     public class DocumentError
     {
