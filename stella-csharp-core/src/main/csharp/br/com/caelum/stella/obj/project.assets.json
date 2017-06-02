@@ -3006,7 +3006,7 @@
     "C:\\Users\\marce\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.2.0",
+    "version": "1.4.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\marce\\Documents\\GitHub\\caelum-stella-csharp\\stella-csharp-core\\src\\main\\csharp\\br\\com\\caelum\\stella\\caelum-stella-csharp.csproj",
       "projectName": "caelum-stella-csharp",

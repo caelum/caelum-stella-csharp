@@ -8,11 +8,8 @@ namespace Caelum.Stella.CSharp.Inwords
     /// </summary>
     public class NumeroPT
     {
-        private readonly ResourceManager resourceManager;
         public NumeroPT()
         {
-            resourceManager = new ResourceManager(@"CaelumStellaCSharp.Properties.Resources",
-                         System.Reflection.Assembly.Load(new System.Reflection.AssemblyName("CaelumStellaCSharp")));
         }
 
         /// <summary>
@@ -44,7 +41,7 @@ namespace Caelum.Stella.CSharp.Inwords
             double potenciaDe10 = (int)Math.Pow(10, (int)numeroDigitos);
             if (numero % potenciaDe10 == 0)
             {
-                return resourceManager.GetString(string.Format("Extenso{0:000}", numero));
+                return ResourceManagerHelper.Instance.ResourceManager.GetString(string.Format("Extenso{0:000}", numero));
             }
             else
             {
@@ -57,9 +54,9 @@ namespace Caelum.Stella.CSharp.Inwords
             string estaCasaPorExtenso = string.Empty;
             double estaCasa = (int)((numero / potenciaDe10) * potenciaDe10);
             if (estaCasa == 100)
-                estaCasaPorExtenso = resourceManager.GetString("Extenso100mais");
+                estaCasaPorExtenso = ResourceManagerHelper.Instance.ResourceManager.GetString("Extenso100mais");
             else
-                estaCasaPorExtenso = resourceManager.GetString(string.Format("Extenso{0:000}", estaCasa));
+                estaCasaPorExtenso = ResourceManagerHelper.Instance.ResourceManager.GetString(string.Format("Extenso{0:000}", estaCasa));
 
             var proximasCasas = numero % potenciaDe10;
             return string.Format("{0:000} e {1:000}"
@@ -69,7 +66,7 @@ namespace Caelum.Stella.CSharp.Inwords
 
         private string Extenso0_20(double numero)
         {
-            return resourceManager.GetString(string.Format("Extenso{0:000}", numero));
+            return ResourceManagerHelper.Instance.ResourceManager.GetString(string.Format("Extenso{0:000}", numero));
         }
     }
 
@@ -324,8 +321,8 @@ namespace Caelum.Stella.CSharp.Inwords
         private static ResourceManagerHelper instance;
         private ResourceManagerHelper()
         {
-            resourceManager = new ResourceManager(@"CaelumStellaCSharp.Properties.messages_pt_BR",
-             System.Reflection.Assembly.Load(new System.Reflection.AssemblyName("CaelumStellaCSharp")));
+            resourceManager = new ResourceManager(@"Caelum.Stella.CSharp.Properties.messages_pt_BR",
+             System.Reflection.Assembly.Load(new System.Reflection.AssemblyName("Caelum.Stella.CSharp")));
         }
 
         public static ResourceManagerHelper Instance

@@ -37,7 +37,7 @@ namespace Caelum.Stella.CSharp.Validation.Test
         {
             foreach (String validString in validStrings)
             {
-                validator.IsValid(validString);
+                validator.AssertValid(validString);
             }
         }
 
@@ -46,7 +46,7 @@ namespace Caelum.Stella.CSharp.Validation.Test
         {
             foreach (String validString in validStringsFormatted)
             {
-                validator.IsValid(validString);
+                validator.AssertValid(validString);
             }
         }
 
@@ -57,7 +57,7 @@ namespace Caelum.Stella.CSharp.Validation.Test
             {
                 try
                 {
-                    validator.IsValid(invalidString);
+                    validator.AssertValid(invalidString);
                     Assert.Fail("O titulo eleitoral " + invalidString + " deve ser considerado inválido!");
                 }
                 catch (InvalidStateException)
@@ -73,7 +73,7 @@ namespace Caelum.Stella.CSharp.Validation.Test
             {
                 try
                 {
-                    validator.IsValid(invalidString);
+                    validator.AssertValid(invalidString);
                     Assert.Fail("O titulo eleitoral " + invalidString + " deve ser considerado inválido!");
                 }
                 catch (InvalidStateException)
@@ -86,21 +86,21 @@ namespace Caelum.Stella.CSharp.Validation.Test
         [ExpectedException(typeof(InvalidStateException))]
         public void ShouldNotValidateStringMoreDigits()
         {
-            validator.IsValid(validStrings[0] + "0");
+            validator.AssertValid(validStrings[0] + "0");
         }
 
         [TestMethod]
         [ExpectedException(typeof(InvalidStateException))]
         public void ShouldNotValidateStringWithCodigoDeEstadoInvalidoMenorDoQueUm()
         {
-            validator.IsValid("471235380051");
+            validator.AssertValid("471235380051");
         }
 
         [TestMethod]
         [ExpectedException(typeof(InvalidStateException))]
         public void ShouldNotValidateStringWithCodigoDeEstadoInvalidoMaiorDoQue28()
         {
-            validator.IsValid("815155812960");
+            validator.AssertValid("815155812960");
         }
     }
 }

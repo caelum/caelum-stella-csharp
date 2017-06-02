@@ -7,8 +7,8 @@
     <ProjectGuid>{1B02D3EA-A975-4240-B8E1-EF8419EEDDA3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CaelumStellaCSharp.Test</RootNamespace>
-    <AssemblyName>CaelumStellaCSharp.Test</AssemblyName>
+    <RootNamespace>Caelum.Stella.CSharp.Test</RootNamespace>
+    <AssemblyName>Caelum.Stella.CSharp.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

@@ -2,8 +2,8 @@
 
   <PropertyGroup>    
     <TargetFramework>netcoreapp1.1</TargetFramework>    
-    <AssemblyName>CaelumStellaCSharpNetCore.Test</AssemblyName>    
-    <RootNamespace>CaelumStellaCSharp.Test</RootNamespace>
+    <AssemblyName>Caelum.Stella.CSharp.NetCore.Test</AssemblyName>    
+    <RootNamespace>Caelum.Stella.CSharp.NetCore.Test</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

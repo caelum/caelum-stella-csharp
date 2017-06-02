@@ -1,7 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Caelum.Stella.CSharp.Inwords.Test
 {
@@ -18,160 +16,160 @@ namespace Caelum.Stella.CSharp.Inwords.Test
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
-        public void shouldNotTransformNegativeDouble()
+        public void ShouldNotTransformNegativeDouble()
         {
             string extenso = numeroBR.Extenso(-1);
         }
 
         [TestMethod]
-        public void shouldTransform0InWords()
+        public void ShouldTransform0InWords()
         {
             string extenso = numeroBR.Extenso(0);
             Assert.AreEqual("zero", extenso);
         }
 
         [TestMethod]
-        public void shouldTransform1InWords()
+        public void ShouldTransform1InWords()
         {
             string extenso = numeroBR.Extenso(1);
             Assert.AreEqual("um", extenso);
         }
 
         [TestMethod]
-        public void shouldTransform2InWords()
+        public void ShouldTransform2InWords()
         {
             string extenso = numeroBR.Extenso(2);
             Assert.AreEqual("dois", extenso);
         }
 
         [TestMethod]
-        public void shouldTransform14InWords()
+        public void ShouldTransform14InWords()
         {
             string extenso = numeroBR.Extenso(14);
             Assert.AreEqual("quatorze", extenso);
         }
 
         [TestMethod]
-        public void shouldTransform53InWordsUsingAnd()
+        public void ShouldTransform53InWordsUsingAnd()
         {
             string extenso = numeroBR.Extenso(53);
             Assert.AreEqual("cinquenta e três", extenso);
         }
 
         [TestMethod]
-        public void shouldTransform99InWordsUsingAnd()
+        public void ShouldTransform99InWordsUsingAnd()
         {
             string extenso = numeroBR.Extenso(99);
             Assert.AreEqual("noventa e nove", extenso);
         }
 
         [TestMethod]
-        public void shouldTransformOneHundredInWords()
+        public void ShouldTransformOneHundredInWords()
         {
             string extenso = numeroBR.Extenso(100);
             Assert.AreEqual("cem", extenso);
         }
 
         [TestMethod]
-        public void shouldTransform101InWordsUsingAnd()
+        public void ShouldTransform101InWordsUsingAnd()
         {
             string extenso = numeroBR.Extenso(101);
             Assert.AreEqual("cento e um", extenso);
         }
 
         [TestMethod]
-        public void shouldTransform199InWordsUsingAnd()
+        public void ShouldTransform199InWordsUsingAnd()
         {
             string extenso = numeroBR.Extenso(199);
             Assert.AreEqual("cento e noventa e nove", extenso);
         }
 
         [TestMethod]
-        public void shouldTransform200InWordsUsingAnd()
+        public void ShouldTransform200InWordsUsingAnd()
         {
             string extenso = numeroBR.Extenso(200);
             Assert.AreEqual("duzentos", extenso);
         }
 
         [TestMethod]
-        public void shouldTransform201InWordsUsingAnd()
+        public void ShouldTransform201InWordsUsingAnd()
         {
             string extenso = numeroBR.Extenso(201);
             Assert.AreEqual("duzentos e um", extenso);
         }
 
         [TestMethod]
-        public void shouldTransform999InWords()
+        public void ShouldTransform999InWords()
         {
             string extenso = numeroBR.Extenso(999);
             Assert.AreEqual("novecentos e noventa e nove", extenso);
         }
 
         [TestMethod]
-        public void shouldTransformThousandInWords()
+        public void ShouldTransformThousandInWords()
         {
             string extenso = numeroBR.Extenso(1000);
             Assert.AreEqual("um mil", extenso);
         }
 
         [TestMethod]
-        public void shouldTransform1001InWords()
+        public void ShouldTransform1001InWords()
         {
             string extenso = numeroBR.Extenso(1001);
             Assert.AreEqual("um mil e um", extenso);
         }
 
         [TestMethod]
-        public void shouldTransformThousandInWordsUsingAnd()
+        public void ShouldTransformThousandInWordsUsingAnd()
         {
             string extenso = numeroBR.Extenso(1031);
             Assert.AreEqual("um mil e trinta e um", extenso);
         }
 
         [TestMethod]
-        public void shouldTransformAMillionIntoNumberInWordsUsingSingular()
+        public void ShouldTransformAMillionIntoNumberInWordsUsingSingular()
         {
             string extenso = numeroBR.Extenso(1000000);
             Assert.AreEqual("um milhão", extenso);
         }
 
         [TestMethod]
-        public void shouldTransformAMillionIntoNumberInWordsUsingAnd()
+        public void ShouldTransformAMillionIntoNumberInWordsUsingAnd()
         {
             string extenso = numeroBR.Extenso(1000150.99);
             Assert.AreEqual("um milhão e cento e cinquenta e um", extenso);
         }
 
         [TestMethod]
-        public void shouldTransformAMillionAndThousandIntoNumberInWordsUsingAnd()
+        public void ShouldTransformAMillionAndThousandIntoNumberInWordsUsingAnd()
         {
             string extenso = numeroBR.Extenso(1023850);
             Assert.AreEqual("um milhão, vinte e três mil e oitocentos e cinquenta", extenso);
         }
 
         [TestMethod]
-        public void shouldTransformTwoMillionUsingPlural()
+        public void ShouldTransformTwoMillionUsingPlural()
         {
             string extenso = numeroBR.Extenso(2e6);
             Assert.AreEqual("dois milhões", extenso);
         }
 
         [TestMethod]
-        public void shouldTransformANumberInWordsUsingFraction()
+        public void ShouldTransformANumberInWordsUsingFraction()
         {
             string extenso = numeroBR.Extenso(222);
             Assert.AreEqual("duzentos e vinte e dois", extenso);
         }
 
         [TestMethod]
-        public void shouldTransform1E21()
+        public void ShouldTransform1E21()
         {
             string extenso = numeroBR.Extenso(1E21);
             Assert.AreEqual("um sextilhão", extenso);
         }
 
         [TestMethod]
-        public void shouldTransform2E21()
+        public void ShouldTransform2E21()
         {
             string extenso = numeroBR.Extenso(2E21);
             Assert.AreEqual("dois sextilhões", extenso);

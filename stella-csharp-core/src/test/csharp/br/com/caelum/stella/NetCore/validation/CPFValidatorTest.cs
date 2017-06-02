@@ -19,22 +19,22 @@ namespace Caelum.Stella.CSharp.Validation.Test
         [TestMethod]
         public void DeveValidarCPFValido()
         {
-            cpfValidator.IsValid("11144477735");
-            cpfValidator.IsValid("88641577947");
-            cpfValidator.IsValid("34608514300");
-            cpfValidator.IsValid("47393545608");
+            cpfValidator.AssertValid("11144477735");
+            cpfValidator.AssertValid("88641577947");
+            cpfValidator.AssertValid("34608514300");
+            cpfValidator.AssertValid("47393545608");
         }
 
         [TestMethod]
         public void DeveValidarCPFNulo()
         {
-            cpfValidator.IsValid(null);
+            cpfValidator.AssertValid(null);
         }
 
         [TestMethod]
         public void DeveValidarCPFComZerosIniciais()
         {
-            cpfValidator.IsValid("01169538452");
+            cpfValidator.AssertValid("01169538452");
         }
 
         [TestMethod]
@@ -42,7 +42,7 @@ namespace Caelum.Stella.CSharp.Validation.Test
         {
             try
             {
-                cpfValidator.IsValid("1234567890");
+                cpfValidator.AssertValid("1234567890");
                 Assert.Fail();
             }
             catch (InvalidStateException e)
@@ -56,7 +56,7 @@ namespace Caelum.Stella.CSharp.Validation.Test
         {
             try
             {
-                cpfValidator.IsValid("123456789012");
+                cpfValidator.AssertValid("123456789012");
                 Assert.Fail();
             }
             catch (InvalidStateException e)
@@ -70,7 +70,7 @@ namespace Caelum.Stella.CSharp.Validation.Test
         {
             try
             {
-                cpfValidator.IsValid("1111111a111");
+                cpfValidator.AssertValid("1111111a111");
                 Assert.Fail();
             }
             catch (InvalidStateException e)
@@ -86,7 +86,7 @@ namespace Caelum.Stella.CSharp.Validation.Test
             // VALID CPF = 248.438.034-80
             try
             {
-                cpfValidator.IsValid("24843803470");
+                cpfValidator.AssertValid("24843803470");
                 Assert.Fail();
             }
             catch (InvalidStateException e)
@@ -102,7 +102,7 @@ namespace Caelum.Stella.CSharp.Validation.Test
             // VALID CPF = 099.075.865-60
             try
             {
-                cpfValidator.IsValid("09907586561");
+                cpfValidator.AssertValid("09907586561");
                 Assert.Fail();
             }
             catch (InvalidStateException e)
@@ -116,7 +116,7 @@ namespace Caelum.Stella.CSharp.Validation.Test
         public void DeveValidarCPFValidoFormatado()
         {
             CPFValidator cpfValidator = new CPFValidator(true);
-            cpfValidator.IsValid("356.296.825-63");
+            cpfValidator.AssertValid("356.296.825-63");
         }
 
         [TestMethod]
@@ -126,7 +126,7 @@ namespace Caelum.Stella.CSharp.Validation.Test
             // VALID CPF = 332.375.322-40
             try
             {
-                validator.IsValid("33237532240");
+                validator.AssertValid("33237532240");
                 Assert.Fail();
             }
             catch (InvalidStateException e)
@@ -157,7 +157,7 @@ namespace Caelum.Stella.CSharp.Validation.Test
             {
                 try
                 {
-                    validator.IsValid("22222222222");
+                    validator.AssertValid("22222222222");
                     Assert.Fail();
                 }
                 catch (InvalidStateException e)

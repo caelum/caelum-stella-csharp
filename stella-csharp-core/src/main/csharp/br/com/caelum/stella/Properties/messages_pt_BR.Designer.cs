@@ -40,7 +40,7 @@ namespace Caelum.Stella.CSharp.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CaelumStellaCSharp.Properties.messages_pt_BR", typeof(messages_pt_BR).GetTypeInfo().Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Caelum.Stella.CSharp.Properties.messages_pt_BR", typeof(messages_pt_BR).GetTypeInfo().Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

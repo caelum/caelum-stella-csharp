@@ -20,16 +20,16 @@ namespace Caelum.Stella.CSharp.Validation.Test
         [TestMethod]
         public void ShouldValidateValidCNPJ()
         {
-            cnpjValidator.IsValid("11222333000181");
-            cnpjValidator.IsValid("63025530002409");
-            cnpjValidator.IsValid("61519128000150");
-            cnpjValidator.IsValid("68745386000102");
+            cnpjValidator.AssertValid("11222333000181");
+            cnpjValidator.AssertValid("63025530002409");
+            cnpjValidator.AssertValid("61519128000150");
+            cnpjValidator.AssertValid("68745386000102");
         }
 
         [TestMethod]
         public void ShoulValidateNullCNPJ()
         {
-            cnpjValidator.IsValid(null);
+            cnpjValidator.AssertValid(null);
         }
 
         [TestMethod]
@@ -40,7 +40,7 @@ namespace Caelum.Stella.CSharp.Validation.Test
             try
             {
                 String value = "74221325000160";
-                cnpjValidator.IsValid(value);
+                cnpjValidator.AssertValid(value);
                 Assert.Fail();
             }
             catch (InvalidStateException e)
@@ -59,7 +59,7 @@ namespace Caelum.Stella.CSharp.Validation.Test
             try
             {
                 String value = "26637142000154";
-                cnpjValidator.IsValid(value);
+                cnpjValidator.AssertValid(value);
                 Assert.Fail();
             }
             catch (InvalidStateException e)
@@ -74,7 +74,7 @@ namespace Caelum.Stella.CSharp.Validation.Test
         {
             CNPJValidator validator = new CNPJValidator(true);
             String value = validString;
-            validator.IsValid(value);
+            validator.AssertValid(value);
         }
 
         [TestMethod]
@@ -86,7 +86,7 @@ namespace Caelum.Stella.CSharp.Validation.Test
             try
             {
                 String value = "26637142000158";
-                validator.IsValid(value);
+                validator.AssertValid(value);
                 Assert.Fail();
             }
             catch (InvalidStateException e)

@@ -19,15 +19,11 @@ namespace Caelum.Stella.CSharp.Validation
             this.isFormatted = isFormatted;
         }
 
-        public bool IsValid(string document)
+        public void AssertValid(string document)
         {
-            bool result = true;
             List<string> errors = GetInvalidValues(document);
             if (errors.Count > 0)
-            {
                 throw new InvalidStateException(errors);
-            }
-            return result;
         }
 
         private List<string> GetInvalidValues(string document)
