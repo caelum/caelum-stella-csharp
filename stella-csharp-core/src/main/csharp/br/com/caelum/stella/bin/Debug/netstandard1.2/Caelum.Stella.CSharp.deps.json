@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v1.2": {},
     ".NETStandard,Version=v1.2/": {
-      "caelum.stella.csharp/1.4.0": {
+      "caelum.stella.csharp/1.4.2": {
         "dependencies": {
           "NETStandard.Library": "1.6.1",
           "Newtonsoft.Json": "10.0.2"
@@ -345,7 +345,7 @@
     }
   },
   "libraries": {
-    "caelum.stella.csharp/1.4.0": {
+    "caelum.stella.csharp/1.4.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

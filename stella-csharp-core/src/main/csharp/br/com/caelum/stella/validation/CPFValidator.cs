@@ -5,8 +5,8 @@
     /// </summary>
     public class CPFValidator : BaseCadastroPessoaValidator 
     {
-        protected override string RegexFormatted => @"(\d{3})[.](\d{3})[.](\d{3})-(\d{2})";
-        protected override string RegexUnformatted => @"(\d{3})(\d{3})(\d{3})(\d{2})";
+        public override string RegexFormatted => DocumentFormats.CPFRegexFormatted;
+        public override string RegexUnformatted => DocumentFormats.CPFRegexUnformatted;
         protected override int DocumentLength => 11;
 
         /// <summary>

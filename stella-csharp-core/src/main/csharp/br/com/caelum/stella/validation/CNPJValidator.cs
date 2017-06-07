@@ -5,8 +5,8 @@
     /// </summary>
     public class CNPJValidator : BaseCadastroPessoaValidator
     {
-        protected override string RegexFormatted => @"([\d]{2}[\.][\d]{3}[\.][\d]{3}[\/][\d]{4}[-][\d]{2})|([\d]{3}[\.][\d]{3}[\.][\d]{3}[-][\d]{2})";
-        protected override string RegexUnformatted => @"(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})";
+        public override string RegexFormatted => DocumentFormats.CNPJRegexFormatted;
+        public override string RegexUnformatted => DocumentFormats.CPFRegexUnformatted;
         protected override int DocumentLength => 14;
 
         /// <summary>

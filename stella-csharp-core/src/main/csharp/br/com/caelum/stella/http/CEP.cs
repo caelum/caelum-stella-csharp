@@ -1,4 +1,5 @@
 ﻿using Caelum.Stella.CSharp.Http.Exceptions;
+using Caelum.Stella.CSharp.Validation;
 using System;
 using System.Text.RegularExpressions;
 
@@ -6,8 +7,8 @@ namespace Caelum.Stella.CSharp.Http
 {
     public class CEP : IComparable<CEP>, IEquatable<CEP>
     {
-        protected static string RegexFormatted => @"^\d{5}[-]\d{3}$";
-        protected static string RegexUnformatted => @"^\d{8}$";
+        protected static string RegexFormatted => DocumentFormats.CEPRegexFormatted;
+        protected static string RegexUnformatted => DocumentFormats.CEPRegexUnformatted;
 
         private readonly string cepAsString;
 

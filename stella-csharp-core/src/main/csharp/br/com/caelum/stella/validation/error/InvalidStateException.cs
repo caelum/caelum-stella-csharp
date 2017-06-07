@@ -17,9 +17,6 @@ namespace Caelum.Stella.CSharp.Validation.Error
             return _errors;
         }
 
-        public override string ToString()
-        {
-            return string.Join(", ", _errors);
-        }
+        public override string Message => string.Join("\n -", _errors);
     }
 }

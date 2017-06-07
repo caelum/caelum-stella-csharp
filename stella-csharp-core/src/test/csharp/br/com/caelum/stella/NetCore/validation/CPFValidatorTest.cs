@@ -2,6 +2,7 @@ using Caelum.Stella.CSharp.Error;
 using Caelum.Stella.CSharp.Validation.Error;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Diagnostics;
 
 namespace Caelum.Stella.CSharp.Validation.Test
 {

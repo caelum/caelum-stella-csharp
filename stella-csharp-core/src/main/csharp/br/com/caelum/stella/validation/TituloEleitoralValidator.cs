@@ -62,8 +62,8 @@
     /// </summary>
     public class TituloEleitoralValidator : BaseValidator
     {
-        protected override string RegexFormatted => @"([\d]{10}[\.][\d]{2})";
-        protected override string RegexUnformatted => @"([\d]{12})";
+        public override string RegexFormatted => DocumentFormats.TituloEleitoralRegexFormatted;
+        public override string RegexUnformatted => DocumentFormats.TituloEleitoralRegexUnformatted;
         protected override int DocumentLength => 12;
 
         /// <summary>

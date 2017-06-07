@@ -8,8 +8,8 @@ namespace Caelum.Stella.CSharp.Validation
 {
     public abstract class BaseValidator
     {
-        protected abstract string RegexFormatted { get; }
-        protected abstract string RegexUnformatted { get; }
+        public abstract string RegexFormatted { get; }
+        public abstract string RegexUnformatted { get; }
         protected abstract int DocumentLength { get; }
         protected abstract int GetDigitoVerificador(string documentSubstring);
         protected readonly bool isFormatted;
@@ -24,6 +24,19 @@ namespace Caelum.Stella.CSharp.Validation
             List<string> errors = GetInvalidValues(document);
             if (errors.Count > 0)
                 throw new InvalidStateException(errors);
+        }
+
+        public bool IsValid(string document)
+        {
+            try
+            {
+                AssertValid(document);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         private List<string> GetInvalidValues(string document)
