@@ -20,7 +20,7 @@ namespace Caelum.Stella.CSharp.Http
                 this.cepAsString = null;
             else if (Regex.IsMatch(cepAsString, RegexFormatted))
                 this.cepAsString = UnformatCEP(cepAsString);
-            else if (Regex.IsMatch(cepAsString, RegexUnformatted))
+            else if (new Regex(RegexUnformatted).IsMatch(cepAsString))
                 this.cepAsString = cepAsString;
             else
                 throw new InvalidZipCodeFormat();

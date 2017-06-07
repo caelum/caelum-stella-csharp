@@ -16,6 +16,6 @@ namespace Caelum.Stella.CSharp.Validation
         public static string TituloEleitoralRegexUnformatted => @"(\d{10})(\d{2})";
 
         public static string CEPRegexFormatted => @"(\d{5})-(\d{3})";
-        public static string CEPRegexUnformatted => @"(\d{5})(\d{3})";
+        public static string CEPRegexUnformatted => @"^(\d{5})(\d{3})$";
     }
 }

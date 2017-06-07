@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Uma API .Net Standard para validação e formatação de CPF, CNPJ, Título Eleitoral," +
     " números por extenso em português e obtenção de endereços através do CEP.")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.4.2.0")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.4.3.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.4.3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Caelum Stella CSharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Caelum.Stella.CSharp")]
