@@ -8,8 +8,8 @@ namespace Caelum.Stella.CSharp.Inwords
     {
         protected abstract string MoedaSingular { get; }
         protected abstract string MoedaPlural { get; }
-        protected abstract string CentavoSingular { get; }
-        protected abstract string CentavoPlural { get; }
+        string CentavoSingular { get => ResourceManagerHelper.Instance.ResourceManager.GetString("MoedaCentavo"); }
+        string CentavoPlural { get => ResourceManagerHelper.Instance.ResourceManager.GetString("MoedaCentavos"); }
 
         public Moeda(double numeroOrigem) : base(numeroOrigem)
         {
