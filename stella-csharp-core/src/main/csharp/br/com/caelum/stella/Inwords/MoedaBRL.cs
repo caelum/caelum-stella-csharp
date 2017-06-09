@@ -10,5 +10,9 @@ namespace Caelum.Stella.CSharp.Inwords
         protected override string MoedaPlural { get => ResourceManagerHelper.Instance.ResourceManager.GetString("MoedaBRLPlural"); }
         protected override string CentavoSingular { get => ResourceManagerHelper.Instance.ResourceManager.GetString("MoedaCentavo"); }
         protected override string CentavoPlural { get => ResourceManagerHelper.Instance.ResourceManager.GetString("MoedaCentavos"); }
+
+        public MoedaBRL(double numeroOrigem) : base(numeroOrigem)
+        {
+        }
     }
 }

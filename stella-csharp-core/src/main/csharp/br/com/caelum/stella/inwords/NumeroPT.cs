@@ -8,8 +8,10 @@ namespace Caelum.Stella.CSharp.Inwords
     /// </summary>
     public class NumeroPT
     {
-        public NumeroPT()
+        protected readonly double numeroOrigem;
+        public NumeroPT(double numeroOrigem)
         {
+            this.numeroOrigem = PreparaNumeroOrigem(numeroOrigem);
         }
 
         /// <summary>
@@ -17,9 +19,8 @@ namespace Caelum.Stella.CSharp.Inwords
         /// </summary>
         /// <param name="numeroOrigem">número a ser transformado</param>
         /// <returns></returns>
-        public virtual string Extenso(double numeroOrigem)
+        public virtual string Extenso()
         {
-            numeroOrigem = PreparaNumeroOrigem(numeroOrigem);
             GrupoDe3Digitos grupo = GetGrupoPrincipal(numeroOrigem);
 
             return grupo.Extenso();
