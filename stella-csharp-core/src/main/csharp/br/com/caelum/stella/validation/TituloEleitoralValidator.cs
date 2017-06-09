@@ -62,8 +62,8 @@
     /// </summary>
     public class TituloEleitoralValidator : BaseValidator
     {
-        public override string RegexFormatted => DocumentFormats.TituloEleitoralRegexFormatted;
-        public override string RegexUnformatted => DocumentFormats.TituloEleitoralRegexUnformatted;
+        public override string RegexFormatted => DocumentFormats.TituloEleitoral;
+        public override string RegexUnformatted => DocumentFormats.TituloEleitoralUnformatted;
         protected override int DocumentLength => 12;
 
         /// <summary>

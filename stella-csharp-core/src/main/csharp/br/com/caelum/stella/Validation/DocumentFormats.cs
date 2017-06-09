@@ -6,16 +6,20 @@ namespace Caelum.Stella.CSharp.Validation
 {
     public class DocumentFormats
     {
-        public static string CPFRegexFormatted => @"(\d{3})[.](\d{3})[.](\d{3})-(\d{2})";
-        public static string CPFRegexUnformatted => @"(\d{3})(\d{3})(\d{3})(\d{2})";
+        public static string CPF => @"(\d{3})[.](\d{3})[.](\d{3})-(\d{2})";
+        public static string CPFUnformatted => @"(\d{3})(\d{3})(\d{3})(\d{2})";
+        public static string CPFDigitsOnly => @"^\d{11}$";
 
-        public static string CNPJRegexFormatted => @"(\d{2})[.](\d{3})[.](\d{3})\/(\d{4})-(\d{2})";
-        public static string CNPJRegexUnformatted => @"(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})";
+        public static string CNPJ => @"(\d{2})[.](\d{3})[.](\d{3})\/(\d{4})-(\d{2})";
+        public static string CNPJUnformatted => @"(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})";
+        public static string CNPJDigitsOnly => @"^\d{14}$";
 
-        public static string TituloEleitoralRegexFormatted => @"(\d{10})/(\d{2})";
-        public static string TituloEleitoralRegexUnformatted => @"(\d{10})(\d{2})";
+        public static string TituloEleitoral => @"(\d{10})/(\d{2})";
+        public static string TituloEleitoralUnformatted => @"(\d{10})(\d{2})";
+        public static string TituloEleitoralDigitsOnly => @"^\d{12}$";
 
-        public static string CEPRegexFormatted => @"(\d{5})-(\d{3})";
-        public static string CEPRegexUnformatted => @"^(\d{5})(\d{3})$";
+        public static string CEP => @"(\d{5})-(\d{3})";
+        public static string CEPUnformatted => @"(\d{5})(\d{3})";
+        public static string CEPDigitsOnly => @"^\d{8}$";
     }
 }

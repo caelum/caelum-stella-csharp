@@ -5,8 +5,8 @@
     /// </summary>
     public class CPFValidator : BaseCadastroPessoaValidator 
     {
-        public override string RegexFormatted => DocumentFormats.CPFRegexFormatted;
-        public override string RegexUnformatted => DocumentFormats.CPFRegexUnformatted;
+        public override string RegexFormatted => DocumentFormats.CPF;
+        public override string RegexUnformatted => DocumentFormats.CPFUnformatted;
         protected override int DocumentLength => 11;
 
         /// <summary>

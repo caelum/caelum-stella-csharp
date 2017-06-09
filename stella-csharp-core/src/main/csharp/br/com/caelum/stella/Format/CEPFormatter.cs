@@ -8,7 +8,7 @@ namespace Caelum.Stella.CSharp.Format
     public class CEPFormatter : BaseFormatter
     {
         public CEPFormatter() 
-            : base(DocumentFormats.CEPRegexFormatted, "$1-$2", DocumentFormats.CEPRegexUnformatted, "$1$2")
+            : base(DocumentFormats.CEP, "$1-$2", DocumentFormats.CEPUnformatted, "$1$2")
         {
         }
     }

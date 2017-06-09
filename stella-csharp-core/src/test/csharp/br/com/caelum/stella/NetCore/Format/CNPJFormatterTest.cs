@@ -22,15 +22,15 @@ namespace Caelum.Stella.CSharp.NetCore.Test.Format
         {
             String unformatedValue = "26637142000158";
             String formatedValue = formatter.Format(unformatedValue);
-            Assert.AreEqual(formatedValue, "26.637.142/0001-58");
+            Assert.AreEqual("26.637.142/0001-58", formatedValue);
         }
 
         [TestMethod]
         public void TestUnformat()
         {
-            String formatedValue = "26.637.142/0001-58";
+            String formatedValue = "98.610.832/0001-24";
             String unformatedValue = formatter.Unformat(formatedValue);
-            Assert.AreEqual(unformatedValue, "26637142000158");
+            Assert.AreEqual("98610832000124", unformatedValue);
         }
 
         [TestMethod]
@@ -54,7 +54,7 @@ namespace Caelum.Stella.CSharp.NetCore.Test.Format
         {
             String fotmatedValue = "26637142000158";
             String unformatedValue = formatter.Unformat(fotmatedValue);
-            Assert.AreEqual(unformatedValue, "26637142000158");
+            Assert.AreEqual("26637142000158", unformatedValue);
         }
     }
 }

@@ -5,8 +5,8 @@
     /// </summary>
     public class CNPJValidator : BaseCadastroPessoaValidator
     {
-        public override string RegexFormatted => DocumentFormats.CNPJRegexFormatted;
-        public override string RegexUnformatted => DocumentFormats.CPFRegexUnformatted;
+        public override string RegexFormatted => DocumentFormats.CNPJ;
+        public override string RegexUnformatted => DocumentFormats.CPFUnformatted;
         protected override int DocumentLength => 14;
 
         /// <summary>

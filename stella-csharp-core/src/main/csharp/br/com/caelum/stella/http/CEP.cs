@@ -7,8 +7,8 @@ namespace Caelum.Stella.CSharp.Http
 {
     public class CEP : IComparable<CEP>, IEquatable<CEP>
     {
-        protected static string RegexFormatted => DocumentFormats.CEPRegexFormatted;
-        protected static string RegexUnformatted => DocumentFormats.CEPRegexUnformatted;
+        protected static string RegexFormatted => DocumentFormats.CEP;
+        protected static string RegexUnformatted => DocumentFormats.CEPDigitsOnly;
 
         private readonly string cepAsString;
 

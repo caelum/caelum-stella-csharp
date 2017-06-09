@@ -8,7 +8,7 @@ namespace Caelum.Stella.CSharp.Format
     public class TituloEleitoralFormatter : BaseFormatter
     {
         public TituloEleitoralFormatter()
-            : base(DocumentFormats.TituloEleitoralRegexFormatted, "$1/$2", DocumentFormats.TituloEleitoralRegexUnformatted, "$1$2")
+            : base(DocumentFormats.TituloEleitoral, "$1/$2", DocumentFormats.TituloEleitoralUnformatted, "$1$2")
         {
         }
     }
