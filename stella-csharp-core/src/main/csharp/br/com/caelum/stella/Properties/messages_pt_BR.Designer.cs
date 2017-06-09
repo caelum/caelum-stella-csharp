@@ -656,7 +656,7 @@ namespace Caelum.Stella.CSharp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to \ \e\ .
+        ///   Looks up a localized string similar to  e .
         /// </summary>
         internal static string Extensosep {
             get {
@@ -688,6 +688,78 @@ namespace Caelum.Stella.CSharp.Properties {
         internal static string Extensosepmil {
             get {
                 return ResourceManager.GetString("Extensosepmil", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to reais.
+        /// </summary>
+        internal static string MoedaBRLPlural {
+            get {
+                return ResourceManager.GetString("MoedaBRLPlural", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to real.
+        /// </summary>
+        internal static string MoedaBRLSingular {
+            get {
+                return ResourceManager.GetString("MoedaBRLSingular", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to centavo.
+        /// </summary>
+        internal static string MoedaCentavo {
+            get {
+                return ResourceManager.GetString("MoedaCentavo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to centavos.
+        /// </summary>
+        internal static string MoedaCentavos {
+            get {
+                return ResourceManager.GetString("MoedaCentavos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to euros.
+        /// </summary>
+        internal static string MoedaEURPlural {
+            get {
+                return ResourceManager.GetString("MoedaEURPlural", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to euro.
+        /// </summary>
+        internal static string MoedaEURSingular {
+            get {
+                return ResourceManager.GetString("MoedaEURSingular", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to dólares.
+        /// </summary>
+        internal static string MoedaUSDPlural {
+            get {
+                return ResourceManager.GetString("MoedaUSDPlural", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to dólar.
+        /// </summary>
+        internal static string MoedaUSDSingular {
+            get {
+                return ResourceManager.GetString("MoedaUSDSingular", resourceCulture);
             }
         }
     }

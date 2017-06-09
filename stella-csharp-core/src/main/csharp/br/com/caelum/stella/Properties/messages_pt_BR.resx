@@ -316,7 +316,7 @@
     <value>novecentos</value>
   </data>
   <data name="Extensosep" xml:space="preserve">
-    <value>\ \e\ </value>
+    <value> e </value>
   </data>
   <data name="Extensosepdezena" xml:space="preserve">
     <value>\ \e\ </value>
@@ -326,5 +326,29 @@
   </data>
   <data name="Extensosepmil" xml:space="preserve">
     <value>\,\ </value>
+  </data>
+  <data name="MoedaBRLPlural" xml:space="preserve">
+    <value>reais</value>
+  </data>
+  <data name="MoedaBRLSingular" xml:space="preserve">
+    <value>real</value>
+  </data>
+  <data name="MoedaCentavo" xml:space="preserve">
+    <value>centavo</value>
+  </data>
+  <data name="MoedaCentavos" xml:space="preserve">
+    <value>centavos</value>
+  </data>
+  <data name="MoedaEURPlural" xml:space="preserve">
+    <value>euros</value>
+  </data>
+  <data name="MoedaEURSingular" xml:space="preserve">
+    <value>euro</value>
+  </data>
+  <data name="MoedaUSDPlural" xml:space="preserve">
+    <value>dólares</value>
+  </data>
+  <data name="MoedaUSDSingular" xml:space="preserve">
+    <value>dólar</value>
   </data>
 </root>

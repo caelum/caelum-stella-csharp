@@ -4,7 +4,7 @@ using System;
 namespace Caelum.Stella.CSharp.Inwords.Test
 {
     [TestClass]
-    public class NumeroBRTest
+    public class NumeroPTTest
     {
         NumeroPT numeroBR;
 
