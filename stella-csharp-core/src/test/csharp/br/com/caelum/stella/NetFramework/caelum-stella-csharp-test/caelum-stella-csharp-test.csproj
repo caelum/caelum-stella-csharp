@@ -74,6 +74,12 @@
     <Compile Include="..\..\NetCore\Inwords\NumeroPTTest.cs">
       <Link>inwords\NumeroPTTest.cs</Link>
     </Compile>
+    <Compile Include="..\..\NetCore\Money\CurrencyTests.cs">
+      <Link>Money\CurrencyTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NetCore\Money\MoneyTests.cs">
+      <Link>Money\MoneyTests.cs</Link>
+    </Compile>
     <Compile Include="..\..\NetCore\validation\BaseDocumentValidatorTest.cs">
       <Link>validation\BaseDocumentValidatorTest.cs</Link>
     </Compile>
