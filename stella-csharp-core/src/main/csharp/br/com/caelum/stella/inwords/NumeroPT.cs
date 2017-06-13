@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Caelum.Stella.CSharp.Vault;
+using System;
 using System.Resources;
 
 namespace Caelum.Stella.CSharp.Inwords

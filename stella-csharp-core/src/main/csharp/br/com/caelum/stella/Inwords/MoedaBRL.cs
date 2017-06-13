@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Caelum.Stella.CSharp.Vault;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -9,7 +10,7 @@ namespace Caelum.Stella.CSharp.Inwords
         protected override string MoedaSingular { get => ResourceManagerHelper.Instance.ResourceManager.GetString("MoedaBRLSingular"); }
         protected override string MoedaPlural { get => ResourceManagerHelper.Instance.ResourceManager.GetString("MoedaBRLPlural"); }
 
-        public MoedaBRL(double numeroOrigem) : base(numeroOrigem)
+        public MoedaBRL(double numero) : base(numero)
         {
         }
     }

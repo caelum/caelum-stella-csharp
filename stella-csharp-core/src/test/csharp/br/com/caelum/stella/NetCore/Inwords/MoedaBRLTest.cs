@@ -1,5 +1,7 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Caelum.Stella.CSharp.Vault;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Globalization;
 
 namespace Caelum.Stella.CSharp.Inwords.Test
 {
@@ -297,5 +299,20 @@ namespace Caelum.Stella.CSharp.Inwords.Test
             string extenso = new MoedaBRL(2E21).Extenso();
             Assert.AreEqual("dois sextilhões de reais", extenso);
         }
+
+        [TestMethod]
+        public void ShouldTransformReais1and37CentsInWords()
+        {
+            Money money = new Money(new CultureInfo("pt-BR"), 1.37);
+            string extenso = new MoedaBRL(money).Extenso();
+            Assert.AreEqual("um real e trinta e sete centavos", extenso);
+        }
+
+        //[TestMethod]
+        //public void ShouldTransformDollars1and37CentsInWords()
+        //{
+        //    string extenso = new MoedaBRL(new Money(new CultureInfo("en-US"), 1.37)).Extenso();
+        //    Assert.AreEqual("um dólar e trinta e sete centavos", extenso);
+        //}
     }
 }

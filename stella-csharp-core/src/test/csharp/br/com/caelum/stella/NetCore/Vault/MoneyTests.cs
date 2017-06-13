@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Caelum.Stella.CSharp.Money;
+using Caelum.Stella.CSharp.Vault;
 
-namespace money.Tests
+namespace Caelum.Stella.CSharp.Vault.Tests
 {
     [TestClass]
     public class MoneyTests
@@ -98,15 +98,6 @@ namespace money.Tests
             var actual = expectedMoney.DisplayIn(new CultureInfo("en-CA"));
             Console.WriteLine(actual);
             Assert.AreNotEqual(expected, actual);
-        }
-
-        [TestMethod]
-        public void Can_display_proper_culture_when_created_in_different_culture()
-        {
-            CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("fr-FR");
-            var money = new Money(Currency.EUR, 1000);
-            Assert.AreEqual(new CultureInfo("fr"), money.CurrencyInfo.DisplayCulture);
-            Console.WriteLine(money.ToString());
         }
 
         [TestMethod]

@@ -6,4 +6,3 @@ C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\main
 C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\main\csharp\br\com\caelum\stella\obj\Debug\netstandard1.2\caelum-stella-csharp.AssemblyInfo.cs
 C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\main\csharp\br\com\caelum\stella\obj\Debug\netstandard1.2\Caelum.Stella.CSharp.dll
 C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\main\csharp\br\com\caelum\stella\obj\Debug\netstandard1.2\Caelum.Stella.CSharp.pdb
-C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\main\csharp\br\com\caelum\stella\obj\Debug\netstandard1.2\caelum-stella-csharp.csprojResolveAssemblyReference.cache

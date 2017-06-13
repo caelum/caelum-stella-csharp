@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Caelum.Stella.CSharp.Vault;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -11,7 +12,7 @@ namespace Caelum.Stella.CSharp.Inwords
         string CentavoSingular { get => ResourceManagerHelper.Instance.ResourceManager.GetString("MoedaCentavo"); }
         string CentavoPlural { get => ResourceManagerHelper.Instance.ResourceManager.GetString("MoedaCentavos"); }
 
-        public Moeda(double numeroOrigem) : base(numeroOrigem)
+        protected Moeda(double numeroOrigem) : base(numeroOrigem)
         {
         }
 

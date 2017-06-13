@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
 
-namespace Caelum.Stella.CSharp.Money
+namespace Caelum.Stella.CSharp.Vault
 {
     /// <summary>
     /// A seamless currency class for working with money. 
@@ -24,7 +24,7 @@ namespace Caelum.Stella.CSharp.Money
             var cultures = new CultureInfo[]
                 {
                     new CultureInfo("en-US"),
-                    new CultureInfo("eu-EU"),
+                    new CultureInfo("de-DE"),
                     new CultureInfo("pt-BR")
                 };
 

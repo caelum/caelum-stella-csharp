@@ -74,12 +74,6 @@
     <Compile Include="..\..\NetCore\Inwords\NumeroPTTest.cs">
       <Link>inwords\NumeroPTTest.cs</Link>
     </Compile>
-    <Compile Include="..\..\NetCore\Money\CurrencyTests.cs">
-      <Link>Money\CurrencyTests.cs</Link>
-    </Compile>
-    <Compile Include="..\..\NetCore\Money\MoneyTests.cs">
-      <Link>Money\MoneyTests.cs</Link>
-    </Compile>
     <Compile Include="..\..\NetCore\validation\BaseDocumentValidatorTest.cs">
       <Link>validation\BaseDocumentValidatorTest.cs</Link>
     </Compile>
@@ -91,6 +85,12 @@
     </Compile>
     <Compile Include="..\..\NetCore\validation\TituloEleitoralValidatorTest.cs">
       <Link>validation\TituloEleitoralValidatorTest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NetCore\Vault\CurrencyTests.cs">
+      <Link>Vault\CurrencyTests.cs</Link>
+    </Compile>
+    <Compile Include="..\..\NetCore\Vault\MoneyTests.cs">
+      <Link>Vault\MoneyTests.cs</Link>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

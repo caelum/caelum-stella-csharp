@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Caelum.Stella.CSharp.Money
+namespace Caelum.Stella.CSharp.Vault
 {
     partial class CurrencyInfo
     {

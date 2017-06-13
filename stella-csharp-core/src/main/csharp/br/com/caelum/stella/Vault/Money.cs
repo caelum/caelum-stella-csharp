@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Text;
 using System.Threading;
 
-namespace Caelum.Stella.CSharp.Money
+namespace Caelum.Stella.CSharp.Vault
 {
     /// <summary>
     /// Money is immutable and coupled to the <see cref="CurrencyInfo" /> it belongs

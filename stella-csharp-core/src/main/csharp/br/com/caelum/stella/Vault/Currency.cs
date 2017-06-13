@@ -1,6 +1,6 @@
 using System;
 
-namespace Caelum.Stella.CSharp.Money
+namespace Caelum.Stella.CSharp.Vault
 {
     /// <summary>
     /// Represents world currency by numeric and alphabetic values, as per ISO 4217:

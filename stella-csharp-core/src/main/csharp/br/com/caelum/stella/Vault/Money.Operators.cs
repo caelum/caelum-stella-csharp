@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace Caelum.Stella.CSharp.Money
+namespace Caelum.Stella.CSharp.Vault
 {
     partial struct Money
     {

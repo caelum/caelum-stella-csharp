@@ -2,9 +2,9 @@ using System;
 using System.Globalization;
 using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Caelum.Stella.CSharp.Money;
+using Caelum.Stella.CSharp.Vault;
 
-namespace money.Tests
+namespace Caelum.Stella.CSharp.Vault.Tests
 {
     [TestClass]
     public class CurrencyTests
@@ -21,7 +21,6 @@ namespace money.Tests
         public void TestCleanup()
         {
             CultureInfo.DefaultThreadCurrentCulture = _culture;
-            //CultureInfo.CurrentCulture = _culture;
         }
         
         [TestMethod]
