@@ -15,9 +15,9 @@
     <PackageProjectUrl>https://github.com/caelum/caelum-stella-csharp</PackageProjectUrl>
     <PackageIconUrl>https://www.caelum.com.br/imagens/base/caelum-ensino-inovacao-share.jpg</PackageIconUrl>
     <RepositoryUrl>https://github.com/caelum/caelum-stella-csharp</RepositoryUrl>
-    <Version>1.4.4</Version>
-    <AssemblyVersion>1.4.4.0</AssemblyVersion>
-    <FileVersion>1.4.4.0</FileVersion>
+    <Version>1.4.5</Version>
+    <AssemblyVersion>1.4.5.0</AssemblyVersion>
+    <FileVersion>1.4.5.0</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
