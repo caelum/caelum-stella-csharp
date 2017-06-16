@@ -31,7 +31,7 @@ namespace Caelum.Stella.CSharp.Vault.Tests
         [TestMethod]
         public void Can_create_money_by_units()
         {
-            CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
+            //CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
             Money money = 1000;
             Assert.AreEqual(1000.00, (double) money);
         }

@@ -253,14 +253,14 @@ namespace Caelum.Stella.CSharp.Inwords.Test
         public void ShouldTransformAMillionAndThousandIntoNumberInWordsUsingAnd()
         {
             string extenso = new MoedaUSD(1023850).Extenso();
-            Assert.AreEqual("um milhão, vinte e três mil e oitocentos e cinquenta dólares", extenso);
+            Assert.AreEqual("um milhão, vinte e três mil oitocentos e cinquenta dólares", extenso);
         }
 
         [TestMethod]
         public void ShouldTransformAMillionAndThousandand37CentsIntoNumberInWordsUsingAnd()
         {
             string extenso = new MoedaUSD(1023850.37).Extenso();
-            Assert.AreEqual("um milhão, vinte e três mil e oitocentos e cinquenta dólares e trinta e sete centavos", extenso);
+            Assert.AreEqual("um milhão, vinte e três mil oitocentos e cinquenta dólares e trinta e sete centavos", extenso);
         }
 
         [TestMethod]

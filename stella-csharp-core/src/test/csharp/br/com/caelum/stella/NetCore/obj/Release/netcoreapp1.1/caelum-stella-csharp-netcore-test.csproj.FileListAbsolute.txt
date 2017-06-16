@@ -1,0 +1,14 @@
+C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetCore\bin\Release\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetCore\bin\Release\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetCore\bin\Release\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetCore\bin\Release\netcoreapp1.1\Caelum.Stella.CSharp.NetCore.Test.deps.json
+C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetCore\bin\Release\netcoreapp1.1\Caelum.Stella.CSharp.NetCore.Test.runtimeconfig.json
+C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetCore\bin\Release\netcoreapp1.1\Caelum.Stella.CSharp.NetCore.Test.runtimeconfig.dev.json
+C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetCore\bin\Release\netcoreapp1.1\Caelum.Stella.CSharp.NetCore.Test.dll
+C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetCore\bin\Release\netcoreapp1.1\Caelum.Stella.CSharp.NetCore.Test.pdb
+C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetCore\bin\Release\netcoreapp1.1\Caelum.Stella.CSharp.dll
+C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetCore\bin\Release\netcoreapp1.1\Caelum.Stella.CSharp.pdb
+C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetCore\obj\Release\netcoreapp1.1\caelum-stella-csharp-netcore-test.csprojResolveAssemblyReference.cache
+C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetCore\obj\Release\netcoreapp1.1\caelum-stella-csharp-netcore-test.AssemblyInfo.cs
+C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetCore\obj\Release\netcoreapp1.1\Caelum.Stella.CSharp.NetCore.Test.dll
+C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetCore\obj\Release\netcoreapp1.1\Caelum.Stella.CSharp.NetCore.Test.pdb

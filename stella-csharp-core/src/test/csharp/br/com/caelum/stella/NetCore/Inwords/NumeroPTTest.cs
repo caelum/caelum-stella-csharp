@@ -124,6 +124,13 @@ namespace Caelum.Stella.CSharp.Inwords.Test
         }
 
         [TestMethod]
+        public void ShouldTransform3108InWords()
+        {
+            string extenso = new NumeroPT(3108).Extenso();
+            Assert.AreEqual("três mil cento e oito", extenso);
+        }
+
+        [TestMethod]
         public void ShouldTransformAMillionIntoNumberInWordsUsingSingular()
         {
             string extenso = new NumeroPT(1000000).Extenso();
@@ -141,7 +148,7 @@ namespace Caelum.Stella.CSharp.Inwords.Test
         public void ShouldTransformAMillionAndThousandIntoNumberInWordsUsingAnd()
         {
             string extenso = new NumeroPT(1023850).Extenso();
-            Assert.AreEqual("um milhão, vinte e três mil e oitocentos e cinquenta", extenso);
+            Assert.AreEqual("um milhão, vinte e três mil oitocentos e cinquenta", extenso);
         }
 
         [TestMethod]

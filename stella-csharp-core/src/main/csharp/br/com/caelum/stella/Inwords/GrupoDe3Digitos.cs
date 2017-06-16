@@ -114,7 +114,21 @@ namespace Caelum.Stella.CSharp.Inwords
                 else
                 {
                     GrupoDe3Digitos proximoGrupoComValor = grupoFilho.PrimeiroGrupoComValor();
-                    string separador = proximoGrupoComValor.Posicao == 1 ? " e" : ",";
+                    string separador = string.Empty;
+
+                    if (proximoGrupoComValor.Posicao == 1)
+                    {
+                        if (Posicao == 2
+                            && proximoGrupoComValor.numero >= 100 && proximoGrupoComValor.numero >= 10)
+                            separador = string.Empty;
+                        else
+                            separador = " e";
+                    }
+                    else
+                    {
+                        separador = ",";
+                    }
+
                     return string.Format("{0} {1}{2} {3}",
                     digito.Extenso(),
                     nomeGrupo,
