@@ -71,8 +71,8 @@
     <Compile Include="..\..\NetCore\Inwords\MoedaBRLTest.cs">
       <Link>inwords\MoedaBRLTest.cs</Link>
     </Compile>
-    <Compile Include="..\..\NetCore\Inwords\NumeroPTTest.cs">
-      <Link>inwords\NumeroPTTest.cs</Link>
+    <Compile Include="..\..\NetCore\Inwords\NumeroTest.cs">
+      <Link>inwords\NumeroTest.cs</Link>
     </Compile>
     <Compile Include="..\..\NetCore\validation\BaseDocumentValidatorTest.cs">
       <Link>validation\BaseDocumentValidatorTest.cs</Link>

@@ -7,10 +7,10 @@ namespace Caelum.Stella.CSharp.Inwords
     /// <summary>
     /// Responsável por transformar um número em sua representação por extenso, em português.
     /// </summary>
-    public class NumeroPT
+    public class Numero
     {
         protected readonly double numeroOrigem;
-        public NumeroPT(double numeroOrigem)
+        public Numero(double numeroOrigem)
         {
             this.numeroOrigem = PreparaNumeroOrigem(numeroOrigem);
         }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Caelum.Stella.CSharp.Inwords
 {
-    public abstract class Moeda : NumeroPT
+    public abstract class Moeda : Numero
     {
         protected abstract string MoedaSingular { get; }
         protected abstract string MoedaPlural { get; }
@@ -54,7 +54,7 @@ namespace Caelum.Stella.CSharp.Inwords
 
         private void BuildNumeroMoeda(double numeroOrigem, StringBuilder builder)
         {
-            builder.Append(new NumeroPT(Math.Truncate(numeroOrigem)).Extenso());
+            builder.Append(new Numero(Math.Truncate(numeroOrigem)).Extenso());
         }
 
         private void BuildPalavraMoeda(double numeroOrigem, StringBuilder builder)
@@ -81,7 +81,7 @@ namespace Caelum.Stella.CSharp.Inwords
 
         private void BuildNumeroCentavos(double centavos, StringBuilder builder)
         {
-            builder.Append(new NumeroPT(centavos).Extenso());
+            builder.Append(new Numero(centavos).Extenso());
         }
 
         private void BuildPalavraCentavos(double centavos, StringBuilder builder)
