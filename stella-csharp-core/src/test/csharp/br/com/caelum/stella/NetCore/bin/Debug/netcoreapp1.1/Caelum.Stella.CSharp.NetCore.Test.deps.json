@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v1.1": {
       "caelum.stella.csharp.netcore.test/1.0.0": {
         "dependencies": {
-          "Caelum.Stella.CSharp": "1.4.6",
+          "Caelum.Stella.CSharp": "1.4.7",
           "MSTest.TestAdapter": "1.1.11",
           "MSTest.TestFramework": "1.1.11",
           "Microsoft.NET.Test.Sdk": "15.0.0",
@@ -392,7 +392,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "caelum.stella.csharp/1.4.6": {
+      "caelum.stella.csharp/1.4.7": {
         "dependencies": {
           "Newtonsoft.Json": "10.0.2"
         },
@@ -562,7 +562,7 @@
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
     },
-    "caelum.stella.csharp/1.4.6": {
+    "caelum.stella.csharp/1.4.7": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

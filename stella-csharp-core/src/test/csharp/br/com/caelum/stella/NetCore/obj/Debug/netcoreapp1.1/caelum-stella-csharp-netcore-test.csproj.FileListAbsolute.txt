@@ -11,3 +11,5 @@ C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test
 C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetCore\obj\Debug\netcoreapp1.1\caelum-stella-csharp-netcore-test.AssemblyInfo.cs
 C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetCore\obj\Debug\netcoreapp1.1\Caelum.Stella.CSharp.NetCore.Test.dll
 C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetCore\obj\Debug\netcoreapp1.1\Caelum.Stella.CSharp.NetCore.Test.pdb
+C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetCore\obj\Debug\netcoreapp1.1\caelum-stella-csharp-netcore-test.csprojResolveAssemblyReference.cache
+C:\Users\marce\Documents\GitHub\caelum-stella-csharp\stella-csharp-core\src\test\csharp\br\com\caelum\stella\NetCore\obj\Debug\netcoreapp1.1\caelum-stella-csharp-netcore-test.csproj.CoreCompileInputs.cache

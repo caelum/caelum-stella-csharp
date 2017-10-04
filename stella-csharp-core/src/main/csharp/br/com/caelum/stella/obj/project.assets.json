@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "targets": {
     ".NETStandard,Version=v1.2": {
       "Microsoft.CSharp/4.3.0": {
@@ -3006,16 +3006,28 @@
     "C:\\Users\\marce\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.4.6",
+    "version": "1.4.7",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "C:\\Users\\marce\\Documents\\GitHub\\caelum-stella-csharp\\stella-csharp-core\\src\\main\\csharp\\br\\com\\caelum\\stella\\caelum-stella-csharp.csproj",
       "projectName": "caelum-stella-csharp",
       "projectPath": "C:\\Users\\marce\\Documents\\GitHub\\caelum-stella-csharp\\stella-csharp-core\\src\\main\\csharp\\br\\com\\caelum\\stella\\caelum-stella-csharp.csproj",
+      "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\marce\\Documents\\GitHub\\caelum-stella-csharp\\stella-csharp-core\\src\\main\\csharp\\br\\com\\caelum\\stella\\obj\\",
       "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\marce\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
       "originalTargetFrameworks": [
         "netstandard1.2"
       ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
       "frameworks": {
         "netstandard1.2": {
           "projectReferences": {}

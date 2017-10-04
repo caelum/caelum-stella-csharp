@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "targets": {
     ".NETCoreApp,Version=v1.1": {
       "Castle.Core/4.0.0": {
@@ -2888,12 +2888,18 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "Caelum.Stella.CSharp/1.4.6": {
+      "Caelum.Stella.CSharp/1.4.7": {
         "type": "project",
         "framework": ".NETStandard,Version=v1.2",
         "dependencies": {
           "NETStandard.Library": "1.6.1",
           "Newtonsoft.Json": "10.0.2"
+        },
+        "compile": {
+          "bin/placeholder/Caelum.Stella.CSharp.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Caelum.Stella.CSharp.dll": {}
         }
       }
     }
@@ -8620,7 +8626,7 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "Caelum.Stella.CSharp/1.4.6": {
+    "Caelum.Stella.CSharp/1.4.7": {
       "type": "project",
       "path": "../../../../../../../main/csharp/br/com/caelum/stella/caelum-stella-csharp.csproj",
       "msbuildProject": "../../../../../../../main/csharp/br/com/caelum/stella/caelum-stella-csharp.csproj"
@@ -8628,7 +8634,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v1.1": [
-      "Caelum.Stella.CSharp >= 1.4.6",
+      "Caelum.Stella.CSharp >= 1.4.7",
       "MSTest.TestAdapter >= 1.1.11",
       "MSTest.TestFramework >= 1.1.11",
       "Microsoft.NET.Test.Sdk >= 15.0.0",
@@ -8641,15 +8647,27 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "C:\\Users\\marce\\Documents\\GitHub\\caelum-stella-csharp\\stella-csharp-core\\src\\test\\csharp\\br\\com\\caelum\\stella\\NetCore\\caelum-stella-csharp-netcore-test.csproj",
       "projectName": "caelum-stella-csharp-netcore-test",
       "projectPath": "C:\\Users\\marce\\Documents\\GitHub\\caelum-stella-csharp\\stella-csharp-core\\src\\test\\csharp\\br\\com\\caelum\\stella\\NetCore\\caelum-stella-csharp-netcore-test.csproj",
+      "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\marce\\Documents\\GitHub\\caelum-stella-csharp\\stella-csharp-core\\src\\test\\csharp\\br\\com\\caelum\\stella\\NetCore\\obj\\",
       "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\marce\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
@@ -8687,5 +8705,17 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Castle.Core 4.0.0 depends on System.ComponentModel.TypeConverter (>= 4.0.1) but System.ComponentModel.TypeConverter 4.0.1 was not found. An approximate best match of System.ComponentModel.TypeConverter 4.1.0 was resolved.",
+      "libraryId": "System.ComponentModel.TypeConverter",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v1.1"
+      ]
+    }
+  ]
 }
